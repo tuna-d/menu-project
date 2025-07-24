@@ -1,8 +1,8 @@
 import { Link } from "react-router"
 
-export default function Navbar({ path }) {
+export default function Navbar({ path = "/" }) {
   return (
-    <nav className="bg-white p-4 fixed top-0 left-0 w-full z-10 flex items-center  ">
+    <nav className="bg-white p-4 fixed top-0 left-0 w-full flex items-center shadow">
       {path !== "/" && (
         <button className="absolute active:scale-90 ease-in-out duration-100">
           <Link to={path}>

@@ -1,4 +1,6 @@
-export default categories = [
+import { v4 as uuid } from "uuid"
+
+let categories = [
   {
     name: "Yemek",
     image:
@@ -7,7 +9,7 @@ export default categories = [
   {
     name: "Tatlı",
     image:
-      "https://images.unsplash.com/photo-1506459225024-1428097a7e18?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1469533778471-92a68acc3633?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     name: "Şişe Bira",
@@ -105,3 +107,9 @@ export default categories = [
       "https://images.unsplash.com/photo-1626167344466-54fde4540a9d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
 ]
+
+categories = categories.map((cat) => {
+  return { ...cat, id: uuid() }
+})
+
+export default categories

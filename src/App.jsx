@@ -6,6 +6,10 @@ const router = createBrowserRouter([
     path: "/",
     element: <Home />,
   },
+  {
+    path: "/category/:catId",
+    element: <h1>Category: </h1>,
+  },
 ])
 
 function App() {
