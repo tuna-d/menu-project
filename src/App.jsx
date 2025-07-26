@@ -1,5 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router"
 import Home from "./pages/Home"
+import Category from "./pages/Category"
 
 const router = createBrowserRouter([
   {
@@ -8,7 +9,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/category/:catId",
-    element: <h1>Category: </h1>,
+    element: <Category />,
   },
 ])
 

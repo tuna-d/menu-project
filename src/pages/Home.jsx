@@ -3,14 +3,15 @@ import CategoryCard from "../components/menu/CategoryCard"
 
 import categories from "../data/categories"
 import { Link } from "react-router"
+import bgImg from "/images/drinks_bg.PNG"
 
 export default function Home() {
   return (
     <>
       <Navbar path="/" />
       <img
-        src="src/assets/images/drinks_bg.PNG"
-        alt=""
+        src={bgImg}
+        alt="background"
         className="absolute -z-10 w-screen h-screen object-fit opacity-20"
       />
       <main className="font-noto h-screen pt-24 px-4 overflow-y-auto scroll-smooth w-screen">
