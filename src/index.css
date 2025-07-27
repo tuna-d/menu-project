@@ -8,3 +8,7 @@
   --font-lexend: "Lexend Deca", sans-serif;
   --font-noto: "Noto Sans", sans-serif;
 }
+
+@utility no-scrollbar {
+  @apply [scrollbar-width:none] [&::-webkit-scrollbar]:hidden;
+}

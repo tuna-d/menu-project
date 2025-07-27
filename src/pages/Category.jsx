@@ -1,28 +1,36 @@
-import { useParams } from "react-router"
-
 import Navbar from "../components/Navbar"
+import BgImg from "../components/BgImg"
+import MiniCategoryCard from "../components/menu/MiniCategoryCard"
 
 import categories from "../data/categories"
 import menuItems from "../data/items"
 
 export default function Category() {
-  const { catId } = useParams()
   return (
     <>
       <Navbar path="/" />
-      <div>
-        <h1>Category: {catId}</h1>
-        {/* {menuItems.map((mi) => {
-          return mi.items.map((i) => {
+      <BgImg />
+      <main className="font-noto h-screen pt-24 px-4 overflow-y-auto scroll-smooth w-screen">
+        <div className="flex justify-between">
+          <h1 className="text-3xl">Menü</h1>
+          <div>
+            <button>btn-1</button>
+            <button>btn-2</button>
+          </div>
+        </div>
+        <div className="flex overflow-x-scroll no-scrollbar scroll-smooth my-6 gap-4 ">
+          {categories.map((cat) => {
             return (
-              <>
-                <h2>{i.name}</h2>
-                <img src={i.image} alt="" />
-              </>
+              <MiniCategoryCard
+                name={cat.name}
+                image={cat.image}
+                key={cat.id}
+                id={cat.id}
+              />
             )
-          })
-        })} */}
-      </div>
+          })}
+        </div>
+      </main>
     </>
   )
 }
