@@ -882,7 +882,8 @@ let menuItems = [
       },
       {
         name: "Suvla Rose Cabernet Karasakız 2023",
-        image: "",
+        image:
+          "https://cdn.adisyo.com/mahrezphotos/5844052_60679_20240905110956.jpg",
         desc: "",
         price: 1500.0,
       },
@@ -2326,7 +2327,7 @@ let menuItems = [
     ],
   },
   {
-    category: "Soğuk İçecekler",
+    category: "Soğuk İçecek",
     items: [
       {
         name: "Coca-Cola",

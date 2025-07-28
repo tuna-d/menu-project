@@ -9,12 +9,15 @@ export default function Navbar({ path = "/" }) {
       {Object.keys(useParams()).length !== 0 && (
         <button className="absolute active:scale-90 ease-in-out duration-100">
           <Link to={path}>
-            <img
-              width="44"
-              height="44"
-              src="https://img.icons8.com/laces/64/left.png"
-              alt="left"
-            />
+            <div className="border-2 px-2 py-1 rounded-xl">
+              <img
+                width="30"
+                height="30"
+                src="https://img.icons8.com/ios-filled/100/back.png"
+                alt="left"
+                className="me-1"
+              />
+            </div>
           </Link>
         </button>
       )}

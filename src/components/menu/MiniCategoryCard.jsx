@@ -26,27 +26,29 @@ export default function MiniCategoryCard({ name, image, id }) {
   }, [catId])
 
   return (
-    <div
-      className="border-2 rounded-xl p-2 flex-shrink-0 bg-white"
-      onClick={handleClick}
-      style={
-        isSelected
-          ? {
-              backgroundColor: "rgba(255, 255, 255, 0.4)",
-              transition: "background-color 0.3s ease-in",
-            }
-          : {}
-      }
-      id={id}
-    >
-      <Link to={`/category/${id}`} className="flex items-center space-x-2">
-        <img
-          src={image}
-          alt={`${name} image`}
-          className="w-7 h-7 object-cover object-center rounded-full"
-        />
-        <span className="whitespace-nowrap ps-2.5">{name}</span>
-      </Link>
+    <div className="flex-shrink-0 border-2 rounded-xl overflow-hidden">
+      <div
+        className="p-2 bg-white select-none"
+        onClick={handleClick}
+        style={
+          isSelected
+            ? {
+                backgroundColor: "rgba(255, 255, 255, 0.4)",
+                transition: "background-color 0.3s ease-in",
+              }
+            : {}
+        }
+        id={id}
+      >
+        <Link to={`/category/${id}`} className="flex items-center">
+          <img
+            src={image}
+            alt={`${name} image`}
+            className="w-7 h-7 object-cover object-center rounded-full"
+          />
+          <span className="whitespace-nowrap ps-2 font-noto">{name}</span>
+        </Link>
+      </div>
     </div>
   )
 }

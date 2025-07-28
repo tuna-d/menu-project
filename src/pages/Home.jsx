@@ -4,7 +4,6 @@ import BgImg from "../components/BgImg"
 
 import categories from "../data/categories"
 import { Link } from "react-router"
-import bgImg from "/images/drinks_bg.PNG"
 
 export default function Home() {
   return (
