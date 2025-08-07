@@ -26,7 +26,7 @@ export default function MiniCategoryCard({ name, image, id }) {
   }, [catId])
 
   return (
-    <div className="flex-shrink-0 border-2 rounded-xl overflow-hidden">
+    <div className="flex-shrink-0 border-2 rounded-xl overflow-hidden snap-center mx-2">
       <div
         className="p-2 bg-white select-none"
         onClick={handleClick}
