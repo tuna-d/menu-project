@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router"
 import Home from "./pages/Home"
 import Category from "./pages/Category"
+import Find from "./pages/Find"
 
 const router = createBrowserRouter([
   {
@@ -10,6 +11,10 @@ const router = createBrowserRouter([
   {
     path: "/category/:catId",
     element: <Category />,
+  },
+  {
+    path: "/findfor",
+    element: <Find />,
   },
 ])
 

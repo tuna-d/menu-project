@@ -3,11 +3,11 @@ import { useParams } from "react-router"
 
 import logo from "/images/bunch_logo.png"
 
-export default function Navbar({ path = "/", toggleGrid, isGrid }) {
+export default function Navbar({ path = "/", toggleGrid, isGrid, page }) {
   const isCatPage = Object.keys(useParams())[0] === "catId"
   return (
     <nav className="bg-white p-4 fixed top-0 left-0 w-full flex items-center shadow z-50">
-      {Object.keys(useParams()).length !== 0 && (
+      {page !== "home" && (
         <Link
           to={path}
           className="absolute active:scale-90 ease-in-out duration-100"

@@ -56,7 +56,12 @@ export default function Category() {
 
   return (
     <>
-      <Navbar path="/" toggleGrid={toggleGrid} isGrid={showGrid} />
+      <Navbar
+        path="/"
+        toggleGrid={toggleGrid}
+        isGrid={showGrid}
+        page="category"
+      />
       <BgImg />
       <main
         className="font-noto h-screen overflow-y-auto scroll-smooth w-screen pt-24 pb-4"
