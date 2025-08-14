@@ -23,6 +23,11 @@ export default function Find() {
   const [showTastes, setShowTastes] = useState(tastes)
   const [selectedTastes, setSelectedTastes] = useState([])
   const [clickCounter, setClickCounter] = useState(0)
+  const [generalCategory, setGeneralCategory] = useState([
+    { name: "İçkiler", isSelected: true },
+    { name: "Soft İçecekler", isSelected: false },
+    { name: "Yiyecekler", isSelected: false },
+  ])
 
   const handleChange = (e) => {
     setSearchTerm(e.target.value)
@@ -46,7 +51,7 @@ export default function Find() {
     setSelectedTastes(nextSelectedTastes)
   }, [clickCounter])
 
-  const handleClick = (name) => {
+  const handleClickTaste = (name) => {
     setTastes((prevState) => {
       return prevState.map((t) =>
         t.name.toLowerCase() === name.toLowerCase()
@@ -58,6 +63,16 @@ export default function Find() {
     setClickCounter((prevCount) => prevCount + 1)
   }
 
+  const handleClickCategory = (name) => {
+    setGeneralCategory((prevState) =>
+      prevState.map((cat) =>
+        cat.name.toLowerCase() === name.toLowerCase()
+          ? { ...cat, isSelected: !cat.isSelected }
+          : { ...cat, isSelected: false }
+      )
+    )
+  }
+
   return (
     <>
       <Navbar path="/" page="find" />
@@ -67,10 +82,27 @@ export default function Find() {
           <h1 className="text-2xl mb-2 text-pretty text-center">
             Lezzet keşfetine hoş geldin.
           </h1>
-          <p className="font-light text-sm">
-            Keşfetmek istediğin tatları seç; sana özel lezzetler sunalım.
+          <p className="font-light text-sm mb-4">
+            Keşfetmek istediğin tatları seç, sana özel lezzetler sunalım.
+          </p>
+          <p className="font-light text-sm text-center">
+            Önceklikle bir kategori seçin.
           </p>
         </div>
+
+        <div className="mb-4 flex justify-between">
+          {generalCategory.map((cat, index) => {
+            return (
+              <TasteBox
+                name={cat.name}
+                isSelected={cat.isSelected}
+                key={index}
+                handleClick={() => handleClickCategory(cat.name)}
+              />
+            )
+          })}
+        </div>
+
         <input
           type="text"
           name="search"
@@ -88,7 +120,7 @@ export default function Find() {
                   name={taste.name}
                   isSelected={taste.isSelected}
                   key={index}
-                  handleClick={() => handleClick(taste.name)}
+                  handleClick={() => handleClickTaste(taste.name)}
                 />
               )
             })}
@@ -100,7 +132,7 @@ export default function Find() {
               <TasteBox
                 name={taste.name}
                 key={index}
-                handleClick={() => handleClick(taste.name)}
+                handleClick={() => handleClickTaste(taste.name)}
               />
             )
           })}

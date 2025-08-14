@@ -11,6 +11,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377634_60679_20240530090222.jpg",
         desc: "Zeytinyağı ve tereyağında sotelenmiş salkım kiraz domates ve kültür mantarı, ağır ateşte taze adaçayı ile dinlendirilmiş İngiliz tatlı fasülyesi, çift göz yumurta, domuz bacon* ve ev yapımı dana sosis ile... *Tercihe göre dana bacon ile servis edilebilir. ⏱ Hazırlanış süresi min. 15 dakikadır.",
         price: 650.0,
+        taste: ["tuzlu", "tereyağlı", "bitkisel"],
       },
       {
         name: "Patates Kızartması",
@@ -18,6 +19,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377635_60679_20241021044505.jpg",
         desc: "",
         price: 225.0,
+        taste: ["tuzlu", "yağlı"],
       },
       {
         name: "Trüflü Patates Kızartması",
@@ -25,6 +27,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377636_60679_20241021044330.jpg",
         desc: "Kurutulmuş maydanoz, trüf yağı ve parmesan ile…",
         price: 300.0,
+        taste: ["tuzlu", "mantarımsı", "peynirli"],
       },
       {
         name: "Sıcak Tabağı",
@@ -35,6 +38,7 @@ let menuItems = [
           Klasik: 400.0,
           "Trüflü Patates ile": 440.0,
         },
+        taste: ["tuzlu", "yağlı", "baharatlı"],
       },
       {
         name: "Fish And Chips",
@@ -42,6 +46,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377640_60679_20240530090616.jpg",
         desc: "Kaparili tartar, naneli bezelye püresi ve ızgara limon… *Panede eser miktarda bira kullanılmıştır.",
         price: 485.0,
+        taste: ["tuzlu", "ekşi", "otlu"],
       },
       {
         name: "Club Sandwich",
@@ -52,6 +57,7 @@ let menuItems = [
           Klasik: 440.0,
           "Trüflü Patates ile": 470.0,
         },
+        taste: ["tuzlu", "peynirli", "mayonezli"],
       },
       {
         name: "Queensize Chicken Sandwich",
@@ -62,6 +68,7 @@ let menuItems = [
           Klasik: 420.0,
           "Trüflü Patates ile": 445.0,
         },
+        taste: ["tuzlu", "baharatlı", "otlu"],
       },
       {
         name: "Bacon Ve Kuzu Cottolu Sandwich",
@@ -69,6 +76,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5387018_60679_20240601085448.jpg",
         desc: "Ciabatta ekmeğine sürülmüş zeytin pesto, dana bacon, kuzu cotto, eski kaşar, kuzu kulağı, roka...",
         price: 660.0,
+        taste: ["tuzlu", "füme", "peynirli"],
       },
       {
         name: "Narenciyeli Pancar Salatası",
@@ -76,6 +84,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/6099729_60679_20241030031031.jpg",
         desc: "Fırınlanmış pancar, endivyen salata, portakal segment, glaze narenciye sos, antep fıstığı kreması, şefin özel chia & keten tohumu krakeri ile...",
         price: 375.0,
+        taste: ["narenciyeli", "tatlımsı", "fıstıksı"],
       },
       {
         name: "Enginarlı Salata",
@@ -83,6 +92,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5386981_60679_20240601085139.jpg",
         desc: "Çanak enginar, enginar püresi, badem-incir vinegret, maskolin yeşillik, bakla cips, kırmızı soğan, hatay halhali zeytin, domates... *Vinegrettte eser miktarda kırmızı şarap kullanılmıştır.",
         price: 375.0,
+        taste: ["otlu", "asidik", "enginarımsı"],
       },
       {
         name: "Bunch Falafel",
@@ -90,6 +100,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/6099828_60679_20241030032309.jpg",
         desc: "Şefin özel falafel yorumu, fırınlanmış karnabahar, tane baharatlar ve zeytinyağı ile fırınlanmış baby havuç, fırınlanmış kapya biberi, tabbule salata ile...",
         price: 425.0,
+        taste: ["baharatlı", "otlu", "zeytinyağlı"],
       },
       {
         name: "Bunch Poke",
@@ -97,6 +108,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5962079_60679_20241002102512.jpg",
         desc: "Soya ve sriracha ile marine edilmiş 160 gr. somon, kinoa, avokado, havuç, salatalık, miso&tahin sos ve nori yaprakları ile şefin özel Poke yorumu...",
         price: 650.0,
+        taste: ["umami", "hafif acı", "susamsı", "taptaze"],
       },
       {
         name: "Ekmek Üstü Dana Eti Babaganuş",
@@ -104,6 +116,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5387019_60679_20240601085712.jpg",
         desc: "Ekşi maya ekmek üzerinde tahinli köz sebze ile hazırlanmış şefin özel babaganuşu, uzun pişirilmiş 90 gr. dana incik ve osso buco karışımı, nane, maydonoz ve kırmızı soğan turşusu... *Etin pişirilmesinde eser miktarda kırmızı şarap kullanılmıştır.",
         price: 440.0,
+        taste: ["köz aromalı", "tahinli", "otlu"],
       },
       {
         name: "Ekşili Humus Üzeri Somon",
@@ -111,6 +124,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5484280_60679_20240614021859.jpg",
         desc: "Tabanda ekşili yaz humusu, etrafında limon vinegret ile harmanlanmış kırmızı soğan ve semiz otu, nohut cipsi, 180 gr. somon...",
         price: 650.0,
+        taste: ["ekşi", "humuslu", "otlu", "yağlı"],
       },
       {
         name: "Bangers and Mash",
@@ -118,6 +132,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377642_60679_20240530090819.jpg",
         desc: "%100 el yapımı dana sosis, tane hardallı ve frenk soğanlı patates püresi, üzerine soğan sos...",
         price: 475.0,
+        taste: ["tuzlu", "soğanlı", "tereyağlı"],
       },
       {
         name: "Chicken Tikka Masala",
@@ -125,6 +140,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5997315_60679_20241010124557.jpg",
         desc: "El yapımı garam masala baharatı ile hazırlanmış tikka masala sos, tavuk but, kakule ve anason ile pişirilen kızarmış basmati pirinci, ekşili yoğurt sos, nane, maydanoz ve kırmızı soğan turşusu ile...",
         price: 475.0,
+        taste: ["baharatlı", "kremamsı", "ekşi"],
       },
       {
         name: "Trapani Pestolu Makarna",
@@ -132,6 +148,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5387021_60679_20240601085606.jpg",
         desc: "Sicilya tipi domates pestosu, confit sarımsak yağı, parmesan, ince doğranmış frenk soğanı, conchiglie makarna...",
         price: 400.0,
+        taste: ["domatesli", "sarımsaklı", "peynirli", "taze"],
       },
       {
         name: "Zucchini Spaghetti",
@@ -139,6 +156,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5535829_60679_20240628120154.jpg",
         desc: "Krema&limon sos, taze kabak, taze nane, kavrulmuş panko, parmesan ve kurutulmuş maydonoz ile...",
         price: 375.0,
+        taste: ["kremamsı", "limonlu", "otlu", "peynirli"],
       },
       {
         name: "Vongale Spaghetti",
@@ -146,6 +164,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5959197_60679_20241004021857.jpg",
         desc: "Beyaz şarap ve rende sarımsak ile pişmiş kum midyesi, tereyağ, limon kabuğu ve gremolata ile...",
         price: 500.0,
+        taste: ["deniz aromalı", "tereyağlı", "sarımsaklı", "limonlu"],
       },
       {
         name: "Peynir Tabağı",
@@ -153,6 +172,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5844065_60679_20240905113405.jpg",
         desc: "İsli Çerkez peyniri, Gravyer peyniri, Mihaliç peyniri, taze keçi peyniri, kuru et, lahana turşusu ve armut püresi ile...",
         price: 650.0,
+        taste: ["peynirli", "tuzlu", "isli", "tatlımsı"],
       },
     ],
   },
@@ -165,6 +185,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5992859_60679_20241009030231.jpg",
         desc: "Jameson Black Barrel ve bitter çikolata ile yapılmış mousse, üzerinde tuzlu fındıklı crumble ile...",
         price: 330.0,
+        taste: ["bitter çikolatalı", "viskili", "fındıklı", "tatlı"],
       },
       {
         name: "Bademli Yaban Mersinli Tart",
@@ -172,6 +193,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5387025_60679_20241030030337.jpg",
         desc: "Fransız tipi badem dolgusu, taze yaban mersini ve tart hamuru, pudra şekeri ve dondurma ile...",
         price: 285.0,
+        taste: ["bademli", "yaban mersinli", "tatlı", "ekşimsi"],
       },
     ],
   },
@@ -184,6 +206,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377487_60679_20240530093436.jpg",
         desc: "",
         price: 240.0,
+        taste: ["maltlı", "dengeli"],
       },
       {
         name: "Carlsberg 50 Cl",
@@ -191,6 +214,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377488_60679_20240530093552.jpg",
         desc: "",
         price: 260.0,
+        taste: ["maltlı", "şerbetçiotlu", "dengeli"],
       },
       {
         name: "Tuborg Amber 50 Cl",
@@ -198,6 +222,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377489_60679_20240530093655.jpg",
         desc: "",
         price: 240.0,
+        taste: ["karamelsi", "maltlı"],
       },
       {
         name: "Tuborg Filtresiz 50 Cl",
@@ -205,6 +230,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377490_60679_20240530093749.jpg",
         desc: "",
         price: 240.0,
+        taste: ["maltlı", "gövdeli"],
       },
       {
         name: "Carlsberg Luna 50 Cl",
@@ -212,6 +238,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377677_60679_20240530093945.jpg",
         desc: "",
         price: 270.0,
+        taste: ["maltlı", "yumuşak içimli"],
       },
       {
         name: "Frederik Neipa 35 Cl",
@@ -219,6 +246,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/7466501_60679_20250620103353.jpg",
         desc: "",
         price: 280.0,
+        taste: ["tropik meyvemsi", "narenciyeli", "acımsı"],
       },
       {
         name: "Frederik Tropic IPA 35 Cl",
@@ -226,6 +254,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/7496106_60679_20250626023815.jpg",
         desc: "",
         price: 280.0,
+        taste: ["tropik meyvemsi", "şerbetçiotlu", "acımsı"],
       },
       {
         name: "Frederik India Pale Ale 35 Cl",
@@ -233,6 +262,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377493_60679_20240530094031.jpg",
         desc: "",
         price: 280.0,
+        taste: ["şerbetçiotlu", "acımsı", "narenciyeli"],
       },
       {
         name: "Frederik Brown Ale 35 Cl",
@@ -240,6 +270,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377491_60679_20240530094115.jpg",
         desc: "",
         price: 280.0,
+        taste: ["karamelsi", "fındıksı", "maltlı"],
       },
       {
         name: "Frederik Wheat Ipa 35 Cl",
@@ -247,6 +278,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377494_60679_20240530094340.jpg",
         desc: "",
         price: 280.0,
+        taste: ["buğulu", "narenciyeli", "şerbetçiotlu"],
       },
       {
         name: "Frederik Marzen Lager 35 Cl",
@@ -254,6 +286,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377492_60679_20240530094546.jpg",
         desc: "",
         price: 280.0,
+        taste: ["maltlı", "karamelsi", "yumuşak"],
       },
       {
         name: "Frederik Local 35 Cl",
@@ -261,6 +294,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/6600568_60679_20250129112118.jpg",
         desc: "",
         price: 280.0,
+        taste: ["dengeli", "maltlı"],
       },
       {
         name: "Blanc 33 Cl",
@@ -268,6 +302,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377501_60679_20240530094638.jpg",
         desc: "",
         price: 220.0,
+        taste: ["narenciyeli", "buğulu", "baharatlı"],
       },
       {
         name: "Weihenstephaner 33 Cl",
@@ -275,6 +310,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377496_60679_20240530094742.jpg",
         desc: "",
         price: 300.0,
+        taste: ["buğulu", "muzumsu", "kıvamlı"],
       },
       {
         name: "Weihenstephaner Vitus 33 Cl",
@@ -282,6 +318,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377497_60679_20240530094828.jpg",
         desc: "",
         price: 365.0,
+        taste: ["buğulu", "muzumsu", "gövdeli", "kremamsı"],
       },
       {
         name: "Guinness 44 Cl",
@@ -289,6 +326,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377498_60679_20240530094956.jpg",
         desc: "",
         price: 415.0,
+        taste: ["kavrulmuş", "kremamsı", "kakao notalı", "acımsı"],
       },
       {
         name: "Grimbergen Blonde 33 Cl",
@@ -296,6 +334,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377656_60679_20240530095106.jpg",
         desc: "",
         price: 385.0,
+        taste: ["meyvemsi", "baharatlı", "maltlı"],
       },
       {
         name: "Grimbergen Double Ambrée 33 Cl",
@@ -303,6 +342,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377657_60679_20240530095200.jpg",
         desc: "",
         price: 385.0,
+        taste: ["karamelsi", "kuru meyveli", "maltlı", "baharatlı"],
       },
       {
         name: "Desperados 33 Cl",
@@ -310,6 +350,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377500_60679_20240530095425.jpg",
         desc: "",
         price: 350.0,
+        taste: ["tatlımsı", "narenciyeli", "aromalı"],
       },
       {
         name: "Efes Glutensiz 50 Cl",
@@ -317,6 +358,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5433858_60679_20240608101720.jpg",
         desc: "",
         price: 300.0,
+        taste: ["hafif", "maltlı", "dengeli"],
       },
       {
         name: "Miller 33 Cl",
@@ -324,6 +366,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/6640332_60679_20250203084317.jpg",
         desc: "",
         price: 355.0,
+        taste: ["hafif", "yumuşak içimli", "maltlı"],
       },
       {
         name: "Miller Lime 33 CL",
@@ -331,6 +374,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/7307731_60679_20250523123452.jpg",
         desc: "",
         price: 355.0,
+        taste: ["narenciyeli", "ferah", "hafif"],
       },
       {
         name: "Hoegaarden 33 cl",
@@ -338,6 +382,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5433806_60679_20240608103203.jpg",
         desc: "",
         price: 380.0,
+        taste: ["narenciyeli", "kişnişli", "buğulu"],
       },
     ],
   },
@@ -350,6 +395,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377503_60679_20240614081810.jpg",
         desc: "",
         price: 240.0,
+        taste: ["maltlı", "dengeli"],
       },
       {
         name: "Tuborg Fıçı 30 Cl",
@@ -357,6 +403,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377504_60679_20240614081823.jpg",
         desc: "",
         price: 210.0,
+        taste: ["maltlı", "hafif"],
       },
       {
         name: "Carlsberg Fıçı 50 Cl",
@@ -364,6 +411,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377505_60679_20240601112058.jpg",
         desc: "",
         price: 260.0,
+        taste: ["maltlı", "şerbetçiotlu", "dengeli"],
       },
       {
         name: "Carlsberg Fıçı 30 Cl",
@@ -371,6 +419,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377506_60679_20240601112120.jpg",
         desc: "",
         price: 230.0,
+        taste: ["maltlı", "yumuşak içimli"],
       },
       {
         name: "Carlsberg Luna Fıçı 50 Cl",
@@ -378,6 +427,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377736_60679_20240601112157.jpg",
         desc: "",
         price: 280.0,
+        taste: ["maltlı", "yumuşak", "dengeli"],
       },
       {
         name: "Carlsberg Luna Fıçı 30 Cl",
@@ -385,6 +435,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377737_60679_20240601112219.jpg",
         desc: "",
         price: 245.0,
+        taste: ["maltlı", "yumuşak"],
       },
       {
         name: "Blanc Fıçı 50 Cl",
@@ -392,6 +443,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377509_60679_20240614081926.jpg",
         desc: "",
         price: 325.0,
+        taste: ["narenciyeli", "buğulu", "baharatlı"],
       },
       {
         name: "Blanc Fıçı 30 Cl",
@@ -399,6 +451,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377510_60679_20240614081937.jpg",
         desc: "",
         price: 285.0,
+        taste: ["narenciyeli", "buğulu"],
       },
       {
         name: "Weihenstephaner Fıçı 50 Cl",
@@ -406,6 +459,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377507_60679_20240601112343.jpg",
         desc: "",
         price: 400.0,
+        taste: ["buğulu", "muzumsu", "kıvamlı"],
       },
       {
         name: "Weihenstephaner Fıçı 30 Cl",
@@ -413,6 +467,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377508_60679_20240601112351.jpg",
         desc: "",
         price: 350.0,
+        taste: ["buğulu", "muzumsu"],
       },
       {
         name: "Guinness Fıçı 50 cl",
@@ -420,6 +475,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377511_60679_20240601112403.jpg",
         desc: "",
         price: 410.0,
+        taste: ["kavrulmuş", "kremamsı", "kakao notalı", "acımsı"],
       },
       {
         name: "Guinness Fıçı 25 cl",
@@ -427,6 +483,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377512_60679_20240601112413.jpg",
         desc: "",
         price: 290.0,
+        taste: ["kavrulmuş", "kremamsı", "acımsı"],
       },
     ],
   },
@@ -439,6 +496,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377780_60679_20250718040825.jpg",
         desc: "⛱️ El Yapımı Karpuz Likörü, Absolut, Martini Fiero, Mastik Tentür, Karpuz, Nane",
         price: 615.0,
+        taste: ["meyvemsi", "tatlı", "ferah", "narenciyeli"],
       },
       {
         name: "Blaze",
@@ -446,6 +504,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377779_60679_20240707092217.jpg",
         desc: "⛱️ Tanqueray Nº Ten, St-Germain, El Yapımı Kavun & Ananas Sübye, Elderflower Tentür, Fesleğen, Tane Karabiber",
         price: 615.0,
+        taste: ["çiçeksi", "tropik", "otlu", "baharatlı"],
       },
       {
         name: "Ruby",
@@ -453,6 +512,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/6248357_60679_20241129050757.jpg",
         desc: "Malfy Gin Rosa, Ojo De Tigre Joven, Luxardo Maraschino, Böğürtlen, Limon, Soda, Nane, Maldon Tuz",
         price: 615.0,
+        taste: ["narenciyeli", "meyvemsi", "ekşi", "füme"],
       },
       {
         name: "Top-Notch",
@@ -460,6 +520,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/6217528_60679_20241122055446.jpg",
         desc: "Malfy Con Limone, Italicus, Bianco Vermut, Ojo De Tigre Joven",
         price: 615.0,
+        taste: ["narenciyeli", "bitter", "otlu", "füme"],
       },
       {
         name: "Anti-Venom",
@@ -467,6 +528,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/6746425_60679_20250221070300.jpg",
         desc: "Clarified Milk Punch Jameson, Kahlúa, Limon, BunchMix",
         price: 615.0,
+        taste: ["kremamsı", "kahveli", "tatlı", "ekşimsi"],
       },
       {
         name: "Second To None",
@@ -474,6 +536,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5485203_60679_20240614032103.jpg",
         desc: "Ojo De Tigre Joven, Jameson, El Yapımı Kekik & Narenciye Sosu, Lime Cordial",
         price: 585.0,
+        taste: ["füme", "narenciyeli", "otlu", "ekşi"],
       },
       {
         name: "Pop Rocks",
@@ -481,6 +544,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377528_60679_20240613015602.jpg",
         desc: "Jameson, Olmeca Silver, Havana Club, Böğürtlen, Frambuaz, BunchMix, Patlayan Şeker",
         price: 555.0,
+        taste: ["meyvemsi", "tatlı", "ekşimsi"],
       },
       {
         name: "Perky",
@@ -488,6 +552,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377759_60679_20240613011618.jpg",
         desc: "Jameson Black Barrel, Safari, Fesleğen, Mango, Limon, BunchMix",
         price: 555.0,
+        taste: ["meyvemsi", "tropik", "otlu", "ekşi"],
       },
       {
         name: "Green Lantern",
@@ -495,6 +560,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377529_60679_20240613011727.jpg",
         desc: "Malfy, Kivi, Salatalık, BunchMix",
         price: 555.0,
+        taste: ["ferah", "meyvemsi", "otlu"],
       },
       {
         name: "Holly Jolly",
@@ -502,6 +568,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377527_60679_20240613020442.jpg",
         desc: "🌶 Absolut Raspberri, Beefeater Pink, @annaperenina Reçeli, Çilek, Limon, BunchMix",
         price: 585.0,
+        taste: ["meyvemsi", "tatlı", "ekşi", "hafif acı"],
       },
       {
         name: "Dirty Thirty",
@@ -509,6 +576,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377530_60679_20240613015834.jpg",
         desc: "Jameson, Havana Club, Triple Sec, Malfy, Olmeca Silver, Campari, Çarkıfelek Meyvesi, Greyfurt, Limon, BunchMix",
         price: 555.0,
+        taste: ["narenciyeli", "ekşi", "meyvemsi", "acımsı"],
       },
       {
         name: "Maypop",
@@ -516,6 +584,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377531_60679_20240613012559.jpg",
         desc: "Malfy, Havana Club, Çarkıfelek Meyvesi, BunchMix",
         price: 555.0,
+        taste: ["tropik", "meyvemsi", "tatlı", "ekşimsi"],
       },
       {
         name: "True North",
@@ -523,6 +592,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377760_60679_20240613011904.jpg",
         desc: "Absolut, El Yapımı Yoğurt Likörü, Kahlua, Chocolate Bitters, Zest Badem, Limon",
         price: 555.0,
+        taste: ["kremamsı", "kahveli", "bademsi", "tatlı"],
       },
       {
         name: "Shamrock",
@@ -530,6 +600,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377532_60679_20240613011305.jpg",
         desc: "Absolut, Absolut Lime, Lime, Kuzu Kulağı, Lime Cordial, BunchMix",
         price: 555.0,
+        taste: ["narenciyeli", "ekşi", "otlu"],
       },
       {
         name: "Winter Margarita",
@@ -537,6 +608,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377535_60679_20241010015914.jpg",
         desc: "Olmeca, Aperol, Triple Sec, Greyfurt, Limon",
         price: 555.0,
+        taste: ["narenciyeli", "bitter", "ekşi"],
       },
       {
         name: "Passion X",
@@ -544,6 +616,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377652_60679_20240613020110.jpg",
         desc: "Malfy, Safari, Acıbadem Likörü, Triple Sec, Portakal, Limon, BunchMix",
         price: 555.0,
+        taste: ["narenciyeli", "bademsi", "tatlı", "ekşi"],
       },
       {
         name: "No Mercy",
@@ -551,6 +624,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377698_60679_20240613014834.jpg",
         desc: "🌶🌶 Malibu, Chili Infused Olmeca Silver, Ananas, Limon, BunchMix",
         price: 555.0,
+        taste: ["acı", "tropik", "tatlımsı", "ekşi"],
       },
     ],
   },
@@ -563,6 +637,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377536_60679_20250405011914.jpg",
         desc: "Havana Club, Malfy, Olmeca Silver, Absolut, Triple Sec",
         price: 575.0,
+        taste: ["narenciyeli", "tatlımsı", "keskin"],
       },
       {
         name: "Mojito",
@@ -570,6 +645,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377537_60679_20250405011954.jpg",
         desc: "Havana Club",
         price: 555.0,
+        taste: ["naneli", "ferah", "narenciyeli", "tatlımsı"],
       },
       {
         name: "Margarita",
@@ -577,6 +653,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377539_60679_20240614083433.jpg",
         desc: "Olmeca Silver, Triple Sec",
         price: 525.0,
+        taste: ["narenciyeli", "ekşi", "tuzlu"],
       },
       {
         name: "Negroni",
@@ -584,6 +661,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377538_60679_20250405012203.jpg",
         desc: "Malfy, Martini Rosso, Campari",
         price: 575.0,
+        taste: ["bitter", "narenciyeli", "otlu"],
       },
       {
         name: "Absolut Martini",
@@ -591,6 +669,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377540_60679_20240614083536.jpg",
         desc: "Absolut",
         price: 525.0,
+        taste: ["keskin", "kuru"],
       },
       {
         name: "Dirty Martini",
@@ -598,6 +677,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377541_60679_20250405012343.jpg",
         desc: "Malfy",
         price: 555.0,
+        taste: ["tuzlu", "keskin", "otlu"],
       },
       {
         name: "Cin Martini",
@@ -605,6 +685,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377542_60679_20250405012436.jpg",
         desc: "Malfy",
         price: 555.0,
+        taste: ["keskin", "otlu", "kuru"],
       },
       {
         name: "Espresso Martini",
@@ -612,6 +693,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377732_60679_20240602101635.jpg",
         desc: "Absolut, Kahlua",
         price: 555.0,
+        taste: ["kahveli", "tatlımsı", "kremamsı"],
       },
       {
         name: "Vanilia Espresso Martini",
@@ -619,6 +701,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377733_60679_20240602101728.jpg",
         desc: "Absolut Vanilia, Kahlua",
         price: 555.0,
+        taste: ["vanilyalı", "kahveli", "tatlımsı"],
       },
       {
         name: "Cin Fizz",
@@ -626,6 +709,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377545_60679_20250405012615.jpg",
         desc: "Malfy",
         price: 555.0,
+        taste: ["narenciyeli", "ferah", "ekşi", "gazlı"],
       },
       {
         name: "Cin Tonic",
@@ -633,6 +717,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377546_60679_20250405012715.jpg",
         desc: "Malfy",
         price: 555.0,
+        taste: ["acımsı", "narenciyeli", "ferah"],
       },
       {
         name: "Cin Soda",
@@ -640,6 +725,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377547_60679_20250405012840.jpg",
         desc: "Malfy",
         price: 525.0,
+        taste: ["ferah", "hafif", "otlu"],
       },
       {
         name: "Pink Fizz",
@@ -647,6 +733,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377719_60679_20250405012956.jpg",
         desc: "Malfy Gin Rosa",
         price: 555.0,
+        taste: ["narenciyeli", "meyvemsi", "ferah", "gazlı"],
       },
       {
         name: "Pink Tonic",
@@ -654,6 +741,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377693_60679_20250405013204.jpg",
         desc: "Malfy Gin Rosa",
         price: 555.0,
+        taste: ["narenciyeli", "meyvemsi", "acımsı"],
       },
       {
         name: "Pink Soda",
@@ -661,6 +749,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377694_60679_20250405013246.jpg",
         desc: "Malfy Gin Rosa",
         price: 525.0,
+        taste: ["narenciyeli", "meyvemsi", "ferah"],
       },
       {
         name: "Whiskey Sour",
@@ -668,6 +757,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377550_60679_20250405013542.jpg",
         desc: "Jim Beam",
         price: 555.0,
+        taste: ["ekşi", "narenciyeli", "tatlımsı"],
       },
       {
         name: "Lynchburg Lemonade",
@@ -675,6 +765,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377655_60679_20250405013629.jpg",
         desc: "",
         price: 575.0,
+        taste: ["narenciyeli", "ekşi", "tatlımsı", "ferah"],
       },
       {
         name: "Old Fashioned",
@@ -682,6 +773,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377678_60679_20250405013718.jpg",
         desc: "Jim Beam, Angostura Bitter",
         price: 525.0,
+        taste: ["bitter", "tatlımsı", "narenciyeli"],
       },
       {
         name: "Boulevardier",
@@ -689,6 +781,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377796_60679_20250405014015.jpg",
         desc: "Jim Beam, Martini Rosso, Campari",
         price: 575.0,
+        taste: ["bitter", "narenciyeli", "baharatlı"],
       },
       {
         name: "Coffee Boulevardier",
@@ -696,6 +789,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377823_60679_20250405014125.jpg",
         desc: "Jameson Cold Brew, Martini Rosso, Campari",
         price: 575.0,
+        taste: ["kahveli", "bitter", "narenciyeli"],
       },
       {
         name: "Amaretto Sour",
@@ -703,6 +797,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377766_60679_20250405014235.jpg",
         desc: "",
         price: 525.0,
+        taste: ["bademsi", "tatlımsı", "ekşi"],
       },
       {
         name: "Aperol Spritz",
@@ -710,6 +805,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377551_60679_20250603020631.jpg",
         desc: "",
         price: 525.0,
+        taste: ["bitter", "narenciyeli", "ferah", "gazlı"],
       },
       {
         name: "Campari Spritz",
@@ -717,6 +813,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377731_60679_20240602104341.jpg",
         desc: "",
         price: 525.0,
+        taste: ["bitter", "narenciyeli", "gazlı"],
       },
       {
         name: "Campari Tonic",
@@ -724,6 +821,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377689_60679_20240602104353.jpg",
         desc: "",
         price: 500.0,
+        taste: ["bitter", "narenciyeli", "acımsı", "ferah"],
       },
       {
         name: "White Russian",
@@ -731,6 +829,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377552_60679_20250405014340.jpg",
         desc: "Absolut, Kahlua",
         price: 525.0,
+        taste: ["kremamsı", "kahveli", "tatlı"],
       },
       {
         name: "Black Russian",
@@ -738,6 +837,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377553_60679_20250405014443.jpg",
         desc: "Absolut, Kahlua",
         price: 525.0,
+        taste: ["kahveli", "tatlımsı", "keskin"],
       },
       {
         name: "Cuba Libre",
@@ -745,6 +845,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377554_60679_20250405014527.jpg",
         desc: "Havana Club",
         price: 525.0,
+        taste: ["kolalı", "narenciyeli", "tatlımsı"],
       },
       {
         name: "Irish Car Bomb",
@@ -752,6 +853,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377555_60679_20250603020615.jpg",
         desc: "Jameson",
         price: 475.0,
+        taste: ["kremamsı", "kavrulmuş", "tatlımsı"],
       },
     ],
   },
@@ -767,6 +869,7 @@ let menuItems = [
           Şişe: 1200.0,
           Kadeh: 325.0,
         },
+        taste: ["kırmızı meyveli", "kakaomsu", "tatlımsı"],
       },
       {
         name: "Gordias Syrah 2021",
@@ -774,6 +877,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377841_60679_20240602105130.jpg",
         desc: "Yarı Tatlı 50 Cl",
         price: 1400.0,
+        taste: ["yarı tatlı", "kırmızı meyveli"],
       },
       {
         name: "Vinolus Blend 2020",
@@ -784,6 +888,7 @@ let menuItems = [
           Şişe: 1600.0,
           Kadeh: 430.0,
         },
+        taste: ["kırmızı meyveli", "baharatlı", "vanilyamsı", "fıçı aromalı"],
       },
       {
         name: "Vinolus Kalecikkarası & Tempranillo 2023",
@@ -791,6 +896,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5934656_60679_20240927014412.jpg",
         desc: "%59 Kalecikkarası, %41 Tempranillo kupajı. Koyu yakut rengi, burunda olgun kırmızı meyveler -frambuaz, erik, kiraz- ve fıçıdan gelen aromaların eşlik ettiği, damakta ise burun ile uyumlu vişne, frambuaz ve baharatlardan oluşan zarif tanen yapısı ile dolgun bir şarap...",
         price: 2000.0,
+        taste: ["kırmızı meyveli", "baharatlı", "fıçı aromalı", "tanenli"],
       },
       {
         name: "Suvla Papazkarası 2023",
@@ -801,6 +907,7 @@ let menuItems = [
           Şişe: 1400.0,
           Kadeh: 380.0,
         },
+        taste: ["kırmızı meyveli", "hafif baharatlı", "yumuşak tanenli"],
       },
       {
         name: "Suvla Kumkale Merlot 2021",
@@ -808,6 +915,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5844044_60679_20240905110207.jpg",
         desc: "",
         price: 1300.0,
+        taste: ["eriksi", "yumuşak", "meyvemsi"],
       },
     ],
   },
@@ -823,6 +931,7 @@ let menuItems = [
           Şişe: 1200.0,
           Kadeh: 325.0,
         },
+        taste: ["narenciyeli", "otlu", "asidik", "ferah"],
       },
       {
         name: "Gordias Kalecikkarası Beyaz 2021",
@@ -830,6 +939,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377688_60679_20240602105336.jpg",
         desc: "",
         price: 1300.0,
+        taste: ["narenciyeli", "çiçeksi", "asidik", "ferah"],
       },
       {
         name: "Vinolus Chardonnay 2023",
@@ -837,6 +947,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5934670_60679_20240927014642.jpg",
         desc: "Burunda vanilya, beyaz çiçek, badem ve tereyağı aromaları ile meyveli yapıdadır. Özellikle şeftali ve kayısı baskındır. Tropikal meyve aromaları fıçı ile zarif ve iyi entegre olmuştur. Beyaz çiçek, ayva ve narenciye aromaları yanında geriden bal, hafif tereyağı ve kızarmış ekmek damakta hissedilir. Yağlı ve mineralli yapısı ve diri asitliği ile canlı, yoğun ve uzun bitişe sahiptir.",
         price: 2300.0,
+        taste: ["tropik", "vanilyamsı", "bademsi", "tereyağlı"],
       },
       {
         name: "Suvla Kumkale Narince Emir 2023",
@@ -847,6 +958,7 @@ let menuItems = [
           Şişe: 1300.0,
           Kadeh: 350.0,
         },
+        taste: ["narenciyeli", "çiçeksi", "mineralli", "asidik"],
       },
       {
         name: "Mezzacorona Pinot Grigio 2023",
@@ -854,6 +966,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5857048_60679_20240927014850.jpg",
         desc: "",
         price: 1800.0,
+        taste: ["yeşil elmalı", "narenciyeli", "ferah", "kuru"],
       },
     ],
   },
@@ -869,6 +982,7 @@ let menuItems = [
           Şişe: 1200.0,
           Kadeh: 325.0,
         },
+        taste: ["çileksi", "ferah", "asidik"],
       },
       {
         name: "Suvla Blush Karasakız 2023",
@@ -879,6 +993,7 @@ let menuItems = [
           Şişe: 1800.0,
           Kadeh: 485.0,
         },
+        taste: ["meyvemsi", "çileksi", "ferah", "asidik"],
       },
       {
         name: "Suvla Rose Cabernet Karasakız 2023",
@@ -886,6 +1001,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5844052_60679_20240905110956.jpg",
         desc: "",
         price: 1500.0,
+        taste: ["meyvemsi", "narenciyeli", "ferah"],
       },
     ],
   },
@@ -901,6 +1017,7 @@ let menuItems = [
           Şişe: 1400.0,
           Kadeh: 380.0,
         },
+        taste: ["çileksi", "frambuazlı", "yarı tatlı", "gazlı"],
       },
       {
         name: "Tallero",
@@ -911,6 +1028,7 @@ let menuItems = [
           Şişe: 1200.0,
           Kadeh: 325.0,
         },
+        taste: ["kuru", "ferah", "gazlı"],
       },
       {
         name: "Cinzano Prosecco",
@@ -918,6 +1036,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5390617_60679_20240614080002.jpg",
         desc: "",
         price: 3500.0,
+        taste: ["elmalı", "armutumsu", "kuru", "gazlı"],
       },
     ],
   },
@@ -930,6 +1049,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5434110_60679_20240608104452.jpg",
         desc: "",
         price: 375.0,
+        taste: ["tatlımsı", "vanilyamsı", "baharatlı"],
       },
       {
         name: "Jameson Shot",
@@ -937,6 +1057,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377379_60679_20240604074556.jpg",
         desc: "",
         price: 265.0,
+        taste: ["yumuşak", "maltlı", "odunsu"],
       },
       {
         name: "Absolut Shot",
@@ -944,6 +1065,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377556_60679_20240604074631.jpg",
         desc: "",
         price: 220.0,
+        taste: ["nötr", "keskin"],
       },
       {
         name: "Beefeater Shot",
@@ -951,6 +1073,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377664_60679_20240604074737.jpg",
         desc: "",
         price: 240.0,
+        taste: ["otlu", "narenciyeli", "ardıç"],
       },
       {
         name: "Malfy Shot",
@@ -958,6 +1081,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377764_60679_20240604074815.jpg",
         desc: "",
         price: 345.0,
+        taste: ["narenciyeli", "otlu", "ardıç"],
       },
       {
         name: "Jägermeister Shot",
@@ -965,6 +1089,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377557_60679_20240604074846.jpg",
         desc: "",
         price: 220.0,
+        taste: ["otlu", "baharatlı", "tatlımsı"],
       },
       {
         name: "Jägermeister Manifest Shot",
@@ -972,6 +1097,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377836_60679_20240604074913.jpg",
         desc: "",
         price: 320.0,
+        taste: ["otlu", "baharatlı", "kavrulmuş", "yoğun"],
       },
       {
         name: "Jägermeister Cold Brew Coffee Shot",
@@ -979,6 +1105,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377814_60679_20240604074952.jpg",
         desc: "",
         price: 235.0,
+        taste: ["kahveli", "otlu", "tatlımsı"],
       },
       {
         name: "Jägermeister Orange Shot",
@@ -986,6 +1113,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/7515234_60679_20250630025435.jpg",
         desc: "",
         price: 220.0,
+        taste: ["portakallı", "otlu", "tatlımsı"],
       },
       {
         name: "Olmeca Silver",
@@ -993,6 +1121,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377558_60679_20240604075023.jpg",
         desc: "",
         price: 240.0,
+        taste: ["agave notalı", "narenciyeli", "biberimsi"],
       },
       {
         name: "Olmeca Dark Chocolate",
@@ -1000,6 +1129,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377559_60679_20240604075047.jpg",
         desc: "",
         price: 215.0,
+        taste: ["çikolatalı", "tatlı", "kakao notalı"],
       },
       {
         name: "Olmeca Altos",
@@ -1007,6 +1137,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377745_60679_20240604075203.jpg",
         desc: "",
         price: 310.0,
+        taste: ["agave notalı", "narenciyeli", "biberimsi"],
       },
       {
         name: "Casamigos Mezcal",
@@ -1014,6 +1145,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377791_60679_20240604075259.jpg",
         desc: "",
         price: 380.0,
+        taste: ["füme", "agave notalı", "bittersi"],
       },
       {
         name: "Ojo De Tigre Joven Shot",
@@ -1021,6 +1153,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377786_60679_20240604075357.jpg",
         desc: "",
         price: 490.0,
+        taste: ["füme", "agave notalı", "narenciyeli"],
       },
       {
         name: "Ojo De Tigre Reposado Shot",
@@ -1028,6 +1161,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377787_60679_20240604075428.jpg",
         desc: "",
         price: 570.0,
+        taste: ["füme", "agave notalı", "vanilyamsı"],
       },
       {
         name: "Del Maguey VIDA Shot",
@@ -1035,6 +1169,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/6105884_60679_20241031051913.jpg",
         desc: "",
         price: 620.0,
+        taste: ["füme", "agave notalı", "meyvemsi"],
       },
       {
         name: "Shanky's Whip Shot",
@@ -1042,6 +1177,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/6105833_60679_20241031050546.jpg",
         desc: "",
         price: 240.0,
+        taste: ["vanilyamsı", "karamelsi", "tatlı"],
       },
       {
         name: "Fireball Shot",
@@ -1049,6 +1185,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377806_60679_20240604075507.jpg",
         desc: "",
         price: 230.0,
+        taste: ["tarçınlı", "tatlı", "baharatlı"],
       },
       {
         name: "Baileys Shot",
@@ -1056,6 +1193,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377654_60679_20240604075559.jpg",
         desc: "",
         price: 160.0,
+        taste: ["kremamsı", "vanilyamsı", "tatlı"],
       },
       {
         name: "Havana Club Shot",
@@ -1063,6 +1201,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377562_60679_20240604075652.jpg",
         desc: "",
         price: 265.0,
+        taste: ["karamelsi", "vanilyamsı", "tatlımsı"],
       },
       {
         name: "Smirnoff North Shot",
@@ -1070,6 +1209,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377563_60679_20240604075731.jpg",
         desc: "",
         price: 185.0,
+        taste: ["ferah", "meyvemsi", "hafif"],
       },
       {
         name: "Malfy Pink Rosa Shot",
@@ -1077,6 +1217,7 @@ let menuItems = [
           "https://addisonwines.com/cdn/shop/files/malfyginrosapinkgrapefruit_1_699x700.png?v=1733346916",
         desc: "",
         price: 345.0,
+        taste: ["greyfurtlu", "narenciyeli", "çiçeksi"],
       },
     ],
   },
@@ -1092,6 +1233,7 @@ let menuItems = [
           Tek: 390.0,
           Duble: 545.0,
         },
+        taste: ["balımsı", "meyvemsi", "vanilyamsı"],
       },
       {
         name: "Chivas Extra 13 Sherry Cask Selection",
@@ -1102,6 +1244,7 @@ let menuItems = [
           Tek: 460.0,
           Duble: 645.0,
         },
+        taste: ["şeri notalı", "kuru meyveli", "baharatlı"],
       },
       {
         name: "Chivas Extra 13 Tequila Cask Selection",
@@ -1112,6 +1255,7 @@ let menuItems = [
           Tek: 460.0,
           Duble: 645.0,
         },
+        taste: ["agave notalı", "narenciyeli", "baharatlı"],
       },
       {
         name: "Chivas Extra Smooth & Smoky",
@@ -1122,6 +1266,7 @@ let menuItems = [
           Tek: 410.0,
           Duble: 575.0,
         },
+        taste: ["dumanlı", "yumuşak", "vanilyamsı"],
       },
       {
         name: "Chivas Regal XV",
@@ -1132,6 +1277,7 @@ let menuItems = [
           Tek: 620.0,
           Duble: 870.0,
         },
+        taste: ["meyvemsi", "balımsı", "vanilyamsı"],
       },
       {
         name: "Chivas Regal 18",
@@ -1142,6 +1288,7 @@ let menuItems = [
           Tek: 855.0,
           Duble: 1200.0,
         },
+        taste: ["kuru meyveli", "çikolata", "vanilyamsı", "baharatlı"],
       },
       {
         name: "Chivas Regal Mizunara",
@@ -1152,6 +1299,7 @@ let menuItems = [
           Tek: 710.0,
           Duble: 995.0,
         },
+        taste: ["baharatlı", "odunsu", "vanilyamsı"],
       },
       {
         name: "Ballantine’s Finest",
@@ -1162,6 +1310,7 @@ let menuItems = [
           Tek: 280.0,
           Duble: 390.0,
         },
+        taste: ["balımsı", "vanilyamsı", "yumuşak"],
       },
       {
         name: "Ballantine’s 7",
@@ -1172,6 +1321,7 @@ let menuItems = [
           Tek: 300.0,
           Duble: 420.0,
         },
+        taste: ["vanilyamsı", "meşe", "balımsı"],
       },
       {
         name: "Ballantine’s 10",
@@ -1182,6 +1332,7 @@ let menuItems = [
           Tek: 320.0,
           Duble: 450.0,
         },
+        taste: ["meyvemsi", "vanilyamsı", "baharatlı"],
       },
       {
         name: "Ballantine’s 17",
@@ -1192,6 +1343,7 @@ let menuItems = [
           Tek: 725.0,
           Duble: 1015.0,
         },
+        taste: ["balımsı", "çiçeksi", "meşe"],
       },
       {
         name: "Ballantine’s 21",
@@ -1202,6 +1354,7 @@ let menuItems = [
           Tek: 1280.0,
           Duble: 1790.0,
         },
+        taste: ["balımsı", "kuru meyveli", "vanilyamsı", "meşe"],
       },
       {
         name: "The Deacon",
@@ -1212,6 +1365,7 @@ let menuItems = [
           Tek: 465.0,
           Duble: 650.0,
         },
+        taste: ["isli", "odunsu", "baharatlı"],
       },
       {
         name: "Dimple",
@@ -1222,6 +1376,7 @@ let menuItems = [
           Tek: 285.0,
           Duble: 400.0,
         },
+        taste: ["balımsı", "karamelsi", "yumuşak"],
       },
       {
         name: "Johnnie Walker Red Label",
@@ -1232,6 +1387,7 @@ let menuItems = [
           Tek: 255.0,
           Duble: 355.0,
         },
+        taste: ["baharatlı", "isli", "meyvemsi"],
       },
       {
         name: "Johnnie Walker Black Ruby",
@@ -1242,6 +1398,7 @@ let menuItems = [
           Tek: 375.0,
           Duble: 525.0,
         },
+        taste: ["isli", "kuru meyveli", "baharatlı"],
       },
       {
         name: "Johnnie Walker Black Label",
@@ -1252,6 +1409,7 @@ let menuItems = [
           Tek: 340.0,
           Duble: 475.0,
         },
+        taste: ["isli", "vanilyamsı", "kuru meyveli"],
       },
       {
         name: "Johnnie Walker Double Black",
@@ -1262,6 +1420,7 @@ let menuItems = [
           Tek: 400.0,
           Duble: 560.0,
         },
+        taste: ["isli", "odunsu", "baharatlı"],
       },
       {
         name: "J&B Rare",
@@ -1272,6 +1431,7 @@ let menuItems = [
           Tek: 240.0,
           Duble: 335.0,
         },
+        taste: ["hafif", "meyvemsi", "vanilyamsı"],
       },
       {
         name: "Monkey Shoulder",
@@ -1282,6 +1442,7 @@ let menuItems = [
           Tek: 440.0,
           Duble: 615.0,
         },
+        taste: ["balımsı", "vanilyamsı", "meyvemsi"],
       },
       {
         name: "Smokey Monkey",
@@ -1292,6 +1453,7 @@ let menuItems = [
           Tek: 490.0,
           Duble: 685.0,
         },
+        taste: ["isli", "balımsı", "vanilyamsı"],
       },
       {
         name: "Jameson Standard",
@@ -1302,6 +1464,7 @@ let menuItems = [
           Tek: 335.0,
           Duble: 470.0,
         },
+        taste: ["balımsı", "vanilyamsı", "yumuşak"],
       },
       {
         name: "Jameson Black Barrel",
@@ -1312,6 +1475,7 @@ let menuItems = [
           Tek: 435.0,
           Duble: 610.0,
         },
+        taste: ["vanilyamsı", "kavruk", "baharatlı"],
       },
       {
         name: "Jameson Stout Edition",
@@ -1322,6 +1486,7 @@ let menuItems = [
           Tek: 355.0,
           Duble: 500.0,
         },
+        taste: ["kahvemsi", "kavrulmuş", "vanilyamsı"],
       },
       {
         name: "Jameson IPA Edition",
@@ -1332,6 +1497,7 @@ let menuItems = [
           Tek: 355.0,
           Duble: 500.0,
         },
+        taste: ["şerbetçiotlu", "narenciyeli", "vanilyamsı"],
       },
       {
         name: "Jameson Cold Brew",
@@ -1342,6 +1508,7 @@ let menuItems = [
           Tek: 300.0,
           Duble: 420.0,
         },
+        taste: ["kahveli", "tatlımsı", "kavrulmuş"],
       },
       {
         name: "Tullamore D.E.W.",
@@ -1352,6 +1519,7 @@ let menuItems = [
           Tek: 325.0,
           Duble: 455.0,
         },
+        taste: ["balımsı", "elmalı", "vanilyamsı"],
       },
       {
         name: "Jim Beam",
@@ -1362,6 +1530,7 @@ let menuItems = [
           Tek: 335.0,
           Duble: 470.0,
         },
+        taste: ["vanilyamsı", "mısırımsı", "baharatlı"],
       },
       {
         name: "Bulleit Bourbon",
@@ -1372,6 +1541,7 @@ let menuItems = [
           Tek: 485.0,
           Duble: 680.0,
         },
+        taste: ["baharatlı", "vanilyamsı", "karamelsi"],
       },
       {
         name: "Aberlour 12",
@@ -1382,6 +1552,7 @@ let menuItems = [
           Tek: 655.0,
           Duble: 920.0,
         },
+        taste: ["şeri notalı", "kuru meyveli", "baharatlı"],
       },
       {
         name: "Aberlour 14",
@@ -1392,6 +1563,7 @@ let menuItems = [
           Tek: 890.0,
           Duble: 1245.0,
         },
+        taste: ["şeri notalı", "vanilyamsı", "kuru meyveli"],
       },
       {
         name: "Aberlour Casg Annamh",
@@ -1402,6 +1574,7 @@ let menuItems = [
           Tek: 1000.0,
           Duble: 1400.0,
         },
+        taste: ["şeri notalı", "baharatlı", "kuru meyveli"],
       },
       {
         name: "Aberlour A'bunadh",
@@ -1412,6 +1585,7 @@ let menuItems = [
           Tek: 1380.0,
           Duble: 1930.0,
         },
+        taste: ["yoğun", "şeri notalı", "kuru meyveli", "baharatlı"],
       },
       {
         name: "The Glenlivet 12",
@@ -1422,6 +1596,7 @@ let menuItems = [
           Tek: 580.0,
           Duble: 810.0,
         },
+        taste: ["narenciyeli", "vanilyamsı", "çiçeksi"],
       },
       {
         name: "The Glenlivet Founder’s Reserve",
@@ -1432,6 +1607,7 @@ let menuItems = [
           Tek: 435.0,
           Duble: 610.0,
         },
+        taste: ["narenciyeli", "vanilyamsı", "meyvemsi"],
       },
       {
         name: "Caperdonich 18",
@@ -1442,6 +1618,7 @@ let menuItems = [
           Tek: 2390.0,
           Duble: 3350.0,
         },
+        taste: ["meyvemsi", "vanilyamsı", "odunsu", "baharatlı"],
       },
       {
         name: "Glenfiddich 12",
@@ -1452,6 +1629,7 @@ let menuItems = [
           Tek: 670.0,
           Duble: 940.0,
         },
+        taste: ["armutumsu", "vanilyamsı", "çiçeksi"],
       },
       {
         name: "Glenfiddich 15",
@@ -1462,6 +1640,7 @@ let menuItems = [
           Tek: 1015.0,
           Duble: 1420.0,
         },
+        taste: ["balımsı", "kuru meyveli", "vanilyamsı"],
       },
       {
         name: "Glenfiddich 18",
@@ -1472,6 +1651,7 @@ let menuItems = [
           Tek: 1660.0,
           Duble: 2325.0,
         },
+        taste: ["kuru meyveli", "meşe", "vanilyamsı"],
       },
       {
         name: "Glenfarclas 12",
@@ -1482,6 +1662,7 @@ let menuItems = [
           Tek: 840.0,
           Duble: 1175.0,
         },
+        taste: ["şeri notalı", "kuru meyveli", "fındıksı"],
       },
       {
         name: "Glenfarclas 15",
@@ -1492,6 +1673,7 @@ let menuItems = [
           Tek: 1255.0,
           Duble: 1755.0,
         },
+        taste: ["şeri notalı", "kuru meyveli", "baharatlı"],
       },
       {
         name: "The Glendronach 12",
@@ -1502,6 +1684,7 @@ let menuItems = [
           Tek: 830.0,
           Duble: 1160.0,
         },
+        taste: ["şeri notalı", "kuru meyveli", "çikolata"],
       },
       {
         name: "The Macallan 12",
@@ -1512,6 +1695,7 @@ let menuItems = [
           Tek: 870.0,
           Duble: 1220.0,
         },
+        taste: ["şeri notalı", "vanilyamsı", "kuru meyveli"],
       },
       {
         name: "The Macallan 15",
@@ -1522,6 +1706,7 @@ let menuItems = [
           Tek: 1615.0,
           Duble: 2260.0,
         },
+        taste: ["şeri notalı", "balımsı", "kuru meyveli", "vanilyamsı"],
       },
       {
         name: "The Singleton 12",
@@ -1532,6 +1717,7 @@ let menuItems = [
           Tek: 380.0,
           Duble: 530.0,
         },
+        taste: ["meyvemsi", "vanilyamsı", "yumuşak"],
       },
       {
         name: "Talisker 8",
@@ -1542,6 +1728,7 @@ let menuItems = [
           Tek: 680.0,
           Duble: 950.0,
         },
+        taste: ["isli", "biberimsi", "deniz esintili"],
       },
       {
         name: "Talisker 10",
@@ -1552,6 +1739,7 @@ let menuItems = [
           Tek: 600.0,
           Duble: 840.0,
         },
+        taste: ["isli", "biberimsi", "deniz tuzlu"],
       },
       {
         name: "The Dalmore Cigar Malt Reserve",
@@ -1562,6 +1750,7 @@ let menuItems = [
           Tek: 1460.0,
           Duble: 2045.0,
         },
+        taste: ["portakallı", "kakaomsu", "vanilyamsı", "baharatlı"],
       },
       {
         name: "Lagavulin 8",
@@ -1572,6 +1761,7 @@ let menuItems = [
           Tek: 600.0,
           Duble: 840.0,
         },
+        taste: ["isli", "turba", "odunsu"],
       },
       {
         name: "Benriach 12",
@@ -1582,6 +1772,7 @@ let menuItems = [
           Tek: 625.0,
           Duble: 875.0,
         },
+        taste: ["kuru meyveli", "vanilyamsı", "baharatlı"],
       },
       {
         name: "Glenmorangie 10",
@@ -1592,6 +1783,7 @@ let menuItems = [
           Tek: 460.0,
           Duble: 645.0,
         },
+        taste: ["narenciyeli", "vanilyamsı", "balımsı"],
       },
       {
         name: "Ardbeg 10",
@@ -1602,6 +1794,7 @@ let menuItems = [
           Tek: 610.0,
           Duble: 855.0,
         },
+        taste: ["isli", "turba", "narenciyeli"],
       },
       {
         name: "Auchentoshan 10",
@@ -1612,6 +1805,7 @@ let menuItems = [
           Tek: 440.0,
           Duble: 615.0,
         },
+        taste: ["narenciyeli", "çiçeksi", "hafif"],
       },
       {
         name: "Connemara",
@@ -1622,6 +1816,7 @@ let menuItems = [
           Tek: 575.0,
           Duble: 805.0,
         },
+        taste: ["isli", "vanilyamsı", "balımsı"],
       },
       {
         name: "J.P. Wiser’s 10",
@@ -1632,6 +1827,7 @@ let menuItems = [
           Tek: 300.0,
           Duble: 420.0,
         },
+        taste: ["vanilyamsı", "baharatlı", "karamelsi"],
       },
       {
         name: "Pike Creek 10",
@@ -1642,6 +1838,7 @@ let menuItems = [
           Tek: 365.0,
           Duble: 510.0,
         },
+        taste: ["karamelsi", "vanilyamsı", "kuru meyveli"],
       },
       {
         name: "Lot No. 40",
@@ -1652,6 +1849,7 @@ let menuItems = [
           Tek: 555.0,
           Duble: 775.0,
         },
+        taste: ["baharatlı", "çavdar notalı", "vanilyamsı"],
       },
       {
         name: "Woodford Reserve Straight Bourbon",
@@ -1662,6 +1860,7 @@ let menuItems = [
           Tek: 440.0,
           Duble: 615.0,
         },
+        taste: ["vanilyamsı", "karamelsi", "baharatlı"],
       },
       {
         name: "Woodford Reserve Malt",
@@ -1672,6 +1871,7 @@ let menuItems = [
           Tek: 480.0,
           Duble: 670.0,
         },
+        taste: ["maltımsı", "vanilyamsı", "yumuşak"],
       },
       {
         name: "Woodford Reserve Rye",
@@ -1682,6 +1882,7 @@ let menuItems = [
           Tek: 480.0,
           Duble: 670.0,
         },
+        taste: ["baharatlı", "biberimsi", "vanilyamsı"],
       },
       {
         name: "Woodford Reserve Wheat",
@@ -1692,6 +1893,7 @@ let menuItems = [
           Tek: 480.0,
           Duble: 670.0,
         },
+        taste: ["yumuşak", "vanilyamsı", "tatlımsı"],
       },
       {
         name: "Jack Daniel's",
@@ -1702,6 +1904,7 @@ let menuItems = [
           Tek: 370.0,
           Duble: 520.0,
         },
+        taste: ["vanilyamsı", "karamelsi", "meşe"],
       },
       {
         name: "Gentleman Jack",
@@ -1712,6 +1915,7 @@ let menuItems = [
           Tek: 440.0,
           Duble: 615.0,
         },
+        taste: ["yumuşak", "vanilyamsı", "karamelsi"],
       },
       {
         name: "Jack Daniel's Single Barrel Select",
@@ -1722,6 +1926,7 @@ let menuItems = [
           Tek: 745.0,
           Duble: 1045.0,
         },
+        taste: ["vanilyamsı", "meşe", "baharatlı"],
       },
       {
         name: "Jack Daniel's Bonded Rye",
@@ -1732,6 +1937,7 @@ let menuItems = [
           Tek: 670.0,
           Duble: 940.0,
         },
+        taste: ["baharatlı", "biberimsi", "vanilyamsı"],
       },
       {
         name: "Jack Daniel's Honey",
@@ -1742,6 +1948,7 @@ let menuItems = [
           Tek: 385.0,
           Duble: 540.0,
         },
+        taste: ["ballı", "tatlı", "yumuşak"],
       },
       {
         name: "Jack Daniel's Apple",
@@ -1752,6 +1959,7 @@ let menuItems = [
           Tek: 385.0,
           Duble: 540.0,
         },
+        taste: ["elmalı", "tatlı", "ekşimsi"],
       },
       {
         name: "Jack Daniel's Fire",
@@ -1762,6 +1970,7 @@ let menuItems = [
           Tek: 385.0,
           Duble: 540.0,
         },
+        taste: ["tarçınlı", "tatlı", "baharatlı"],
       },
     ],
   },
@@ -1777,6 +1986,7 @@ let menuItems = [
           Tek: 300.0,
           Duble: 420.0,
         },
+        taste: ["ardıç", "narenciyeli", "otlu", "kuru"],
       },
       {
         name: "Beefeater Pink",
@@ -1787,6 +1997,7 @@ let menuItems = [
           Tek: 300.0,
           Duble: 420.0,
         },
+        taste: ["çilekli", "meyvemsi", "tatlımsı"],
       },
       {
         name: "Beefeater Blood Orange",
@@ -1797,6 +2008,7 @@ let menuItems = [
           Tek: 300.0,
           Duble: 420.0,
         },
+        taste: ["kan portakallı", "narenciyeli", "tatlımsı", "acımsı"],
       },
       {
         name: "Malfy",
@@ -1807,6 +2019,7 @@ let menuItems = [
           Tek: 435.0,
           Duble: 610.0,
         },
+        taste: ["narenciyeli", "ardıç", "otlu"],
       },
       {
         name: "Malfy Gin Rosa",
@@ -1817,6 +2030,7 @@ let menuItems = [
           Tek: 435.0,
           Duble: 610.0,
         },
+        taste: ["greyfurtlu", "narenciyeli", "çiçeksi"],
       },
       {
         name: "Malfy Con Limone",
@@ -1827,6 +2041,7 @@ let menuItems = [
           Tek: 435.0,
           Duble: 610.0,
         },
+        taste: ["limonlu", "narenciyeli", "ferah"],
       },
       {
         name: "Monkey 47 Sloe Gin",
@@ -1837,6 +2052,7 @@ let menuItems = [
           Tek: 480.0,
           Duble: 675.0,
         },
+        taste: ["yaban eriği", "meyvemsi", "tatlımsı"],
       },
       {
         name: "Tanqueray",
@@ -1847,6 +2063,7 @@ let menuItems = [
           Tek: 325.0,
           Duble: 455.0,
         },
+        taste: ["ardıç", "narenciyeli", "otlu"],
       },
       {
         name: "Tanqueray Flor De Sevilla",
@@ -1857,6 +2074,7 @@ let menuItems = [
           Tek: 345.0,
           Duble: 485.0,
         },
+        taste: ["portakallı", "narenciyeli", "tatlımsı"],
       },
       {
         name: "Tanqueray Nº Ten",
@@ -1867,6 +2085,7 @@ let menuItems = [
           Tek: 460.0,
           Duble: 645.0,
         },
+        taste: ["narenciyeli", "çiçeksi", "ardıç"],
       },
       {
         name: "Hendrick's",
@@ -1877,6 +2096,7 @@ let menuItems = [
           Tek: 610.0,
           Duble: 855.0,
         },
+        taste: ["salatalıklı", "güllü", "otlu"],
       },
       {
         name: "Hendrick's Orbium",
@@ -1887,6 +2107,7 @@ let menuItems = [
           Tek: 700.0,
           Duble: 980.0,
         },
+        taste: ["acımsı", "çiçeksi", "otlu"],
       },
       {
         name: "Hendrick's Grand Cabaret",
@@ -1897,6 +2118,7 @@ let menuItems = [
           Tek: 700.0,
           Duble: 980.0,
         },
+        taste: ["çekirdek meyveli", "şeftalimsi", "çiçeksi"],
       },
       {
         name: "Bulldog",
@@ -1907,6 +2129,7 @@ let menuItems = [
           Tek: 440.0,
           Duble: 615.0,
         },
+        taste: ["narenciyeli", "baharatlı", "yumuşak"],
       },
       {
         name: "Roku",
@@ -1917,6 +2140,7 @@ let menuItems = [
           Tek: 515.0,
           Duble: 720.0,
         },
+        taste: ["yuzu narenciyeli", "çiçeksi", "biberimsi"],
       },
       {
         name: "Mosaik Anatolian Gin",
@@ -1927,6 +2151,7 @@ let menuItems = [
           Tek: 410.0,
           Duble: 575.0,
         },
+        taste: ["otlu", "narenciyeli", "ardıç"],
       },
       {
         name: "Bombay Sapphire",
@@ -1937,6 +2162,7 @@ let menuItems = [
           Tek: 360.0,
           Duble: 505.0,
         },
+        taste: ["narenciyeli", "otlu", "hafif baharatlı"],
       },
     ],
   },
@@ -1952,6 +2178,7 @@ let menuItems = [
           Tek: 280.0,
           Duble: 390.0,
         },
+        taste: ["temiz", "kuru", "biberimsi"],
       },
       {
         name: "Absolut Red Bull",
@@ -1959,6 +2186,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377653_60679_20240611020116.jpg",
         desc: "",
         price: 380.0,
+        taste: ["tatlı", "narenciyeli", "gazlı"],
       },
       {
         name: "Absolut Tonic",
@@ -1966,6 +2194,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377666_60679_20240611020155.jpg",
         desc: "",
         price: 380.0,
+        taste: ["acımsı", "narenciyeli", "ferah", "gazlı"],
       },
       {
         name: "Absolut Soda",
@@ -1973,6 +2202,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377667_60679_20240611020203.jpg",
         desc: "",
         price: 380.0,
+        taste: ["ferah", "kuru", "hafif"],
       },
       {
         name: "Absolut Raspberri",
@@ -1983,6 +2213,7 @@ let menuItems = [
           Tek: 280.0,
           Duble: 390.0,
         },
+        taste: ["ahududulu", "meyvemsi", "tatlımsı"],
       },
       {
         name: "Absolut Mandrin",
@@ -1993,6 +2224,7 @@ let menuItems = [
           Tek: 280.0,
           Duble: 390.0,
         },
+        taste: ["mandalinalı", "narenciyeli", "tatlımsı"],
       },
       {
         name: "Absolut Lime",
@@ -2003,6 +2235,7 @@ let menuItems = [
           Tek: 280.0,
           Duble: 390.0,
         },
+        taste: ["limonlu", "narenciyeli", "ferah", "ekşimsi"],
       },
       {
         name: "Absolut Vanilia",
@@ -2013,6 +2246,7 @@ let menuItems = [
           Tek: 280.0,
           Duble: 390.0,
         },
+        taste: ["vanilyalı", "tatlı", "yumuşak"],
       },
       {
         name: "Absolut ELYX",
@@ -2023,6 +2257,7 @@ let menuItems = [
           Tek: 545.0,
           Duble: 765.0,
         },
+        taste: ["ipeksi", "temiz", "yumuşak"],
       },
       {
         name: "Ketel One",
@@ -2033,6 +2268,7 @@ let menuItems = [
           Tek: 460.0,
           Duble: 645.0,
         },
+        taste: ["temiz", "biberimsi", "kuru"],
       },
       {
         name: "Beluga",
@@ -2043,6 +2279,7 @@ let menuItems = [
           Tek: 680.0,
           Duble: 950.0,
         },
+        taste: ["yumuşak", "temiz", "tahılımsı"],
       },
     ],
   },
@@ -2058,6 +2295,7 @@ let menuItems = [
           Tek: 335.0,
           Duble: 470.0,
         },
+        taste: ["karamelsi", "vanilyamsı", "şeker kamışlı"],
       },
       {
         name: "Havana Club 7",
@@ -2068,6 +2306,7 @@ let menuItems = [
           Tek: 445.0,
           Duble: 625.0,
         },
+        taste: ["karamelsi", "vanilyamsı", "kuru meyveli", "baharatlı"],
       },
       {
         name: "Havana Club Selección",
@@ -2078,6 +2317,7 @@ let menuItems = [
           Tek: 720.0,
           Duble: 1010.0,
         },
+        taste: ["odunsu", "baharatlı", "kakaomsu", "vanilyamsı"],
       },
       {
         name: "Bumbu",
@@ -2088,6 +2328,7 @@ let menuItems = [
           Tek: 465.0,
           Duble: 650.0,
         },
+        taste: ["vanilyamsı", "muzumsu", "baharatlı", "tatlı"],
       },
       {
         name: "Bumbu XO",
@@ -2098,6 +2339,7 @@ let menuItems = [
           Tek: 545.0,
           Duble: 765.0,
         },
+        taste: ["odunsu", "kakaomsu", "vanilyamsı", "karamelsi"],
       },
       {
         name: "Zacapa No. 23",
@@ -2108,6 +2350,7 @@ let menuItems = [
           Tek: 585.0,
           Duble: 820.0,
         },
+        taste: ["balımsı", "kuru meyveli", "vanilyamsı", "karamelsi"],
       },
     ],
   },
@@ -2123,6 +2366,7 @@ let menuItems = [
           Tek: 610.0,
           Duble: 855.0,
         },
+        taste: ["meyvemsi", "vanilyamsı", "odunsu"],
       },
       {
         name: "Martell VSOP",
@@ -2133,6 +2377,7 @@ let menuItems = [
           Tek: 810.0,
           Duble: 1135.0,
         },
+        taste: ["kuru meyveli", "vanilyamsı", "odunsu", "baharatlı"],
       },
     ],
   },
@@ -2145,6 +2390,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377607_60679_20240611021828.jpg",
         desc: "",
         price: 240.0,
+        taste: ["kremamsı", "vanilyamsı", "kakaomsu", "tatlı"],
       },
       {
         name: "Kahlúa",
@@ -2152,6 +2398,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377713_60679_20240611021847.jpg",
         desc: "",
         price: 245.0,
+        taste: ["kahveli", "kakao notalı", "tatlı"],
       },
       {
         name: "Malibu",
@@ -2159,6 +2406,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377609_60679_20240611021854.jpg",
         desc: "",
         price: 245.0,
+        taste: ["hindistan cevizli", "tatlımsı", "vanilyamsı"],
       },
       {
         name: "Disaronno",
@@ -2166,6 +2414,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377765_60679_20240611022154.jpg",
         desc: "",
         price: 360.0,
+        taste: ["bademsi", "badem ezmeli", "tatlı"],
       },
       {
         name: "Shanky's Whip",
@@ -2176,6 +2425,7 @@ let menuItems = [
           Tek: 300.0,
           Duble: 420.0,
         },
+        taste: ["vanilyamsı", "karamelsi", "kremamsı", "tatlı"],
       },
       {
         name: "Fireball",
@@ -2186,6 +2436,7 @@ let menuItems = [
           Tek: 290.0,
           Duble: 400.0,
         },
+        taste: ["tarçınlı", "baharatlı", "tatlı"],
       },
       {
         name: "Jägermeister",
@@ -2193,6 +2444,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377612_60679_20240611051859.jpg",
         desc: "",
         price: 330.0,
+        taste: ["otlu", "baharatlı", "tatlımsı", "acımsı"],
       },
       {
         name: "Jäger Red Bull",
@@ -2200,6 +2452,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377613_60679_20240611051907.jpg",
         desc: "",
         price: 370.0,
+        taste: ["otlu", "tatlı", "gazlı"],
       },
       {
         name: "Jägermeister Manifest",
@@ -2210,6 +2463,7 @@ let menuItems = [
           Tek: 400.0,
           Duble: 560.0,
         },
+        taste: ["otlu", "baharatlı", "kavrulmuş", "acımsı"],
       },
       {
         name: "Jägermeister Cold Brew Coffee",
@@ -2217,6 +2471,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377813_60679_20240611051935.jpg",
         desc: "",
         price: 350.0,
+        taste: ["kahveli", "otlu", "tatlımsı"],
       },
       {
         name: "Jägermeister Orange",
@@ -2224,6 +2479,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/7515240_60679_20250630025416.jpg",
         desc: "",
         price: 330.0,
+        taste: ["portakallı", "otlu", "tatlımsı"],
       },
       {
         name: "St-Germain",
@@ -2231,6 +2487,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377770_60679_20240611052018.jpg",
         desc: "",
         price: 535.0,
+        taste: ["çiçeksi", "mürver çiçeği", "tatlımsı", "narenciyeli"],
       },
     ],
   },
@@ -2246,6 +2503,7 @@ let menuItems = [
           Tek: 610.0,
           Duble: 855.0,
         },
+        taste: ["füme", "agave notalı", "narenciyeli", "topraksı"],
       },
       {
         name: "Ojo De Tigre Reposado",
@@ -2256,6 +2514,7 @@ let menuItems = [
           Tek: 710.0,
           Duble: 995.0,
         },
+        taste: ["füme", "agave notalı", "vanilyamsı", "odunsu"],
       },
       {
         name: "Del Maguey VIDA",
@@ -2266,6 +2525,7 @@ let menuItems = [
           Tek: 780.0,
           Duble: 1090.0,
         },
+        taste: ["füme", "agave notalı", "meyvemsi", "otlu"],
       },
       {
         name: "Casamigos",
@@ -2276,6 +2536,7 @@ let menuItems = [
           Tek: 475.0,
           Duble: 665.0,
         },
+        taste: ["füme", "agave notalı", "yumuşak", "meyvemsi"],
       },
     ],
   },
@@ -2288,6 +2549,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377615_60679_20240614082812.jpg",
         desc: "",
         price: 180.0,
+        taste: ["kavrulmuş", "acımsı"],
       },
       {
         name: "Espresso",
@@ -2295,6 +2557,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377738_60679_20240614083631.jpg",
         desc: "",
         price: 190.0,
+        taste: ["yoğun", "kavrulmuş", "acımsı"],
       },
       {
         name: "Americano",
@@ -2302,6 +2565,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377746_60679_20240614083735.jpg",
         desc: "",
         price: 230.0,
+        taste: ["dengeli", "kavrulmuş", "acımsı"],
       },
       {
         name: "Latte",
@@ -2309,6 +2573,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5415684_60679_20240614082941.jpg",
         desc: "",
         price: 240.0,
+        taste: ["sütlü", "kremamsı", "yumuşak"],
       },
       {
         name: "Irish Coffee",
@@ -2316,6 +2581,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377616_60679_20241108025028.jpg",
         desc: "",
         price: 300.0,
+        taste: ["kahveli", "viskili", "tatlımsı", "kremamsı"],
       },
       {
         name: "Baileys Coffee",
@@ -2323,6 +2589,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377617_60679_20250718035156.jpg",
         desc: "",
         price: 290.0,
+        taste: ["kahveli", "kremamsı", "tatlı"],
       },
     ],
   },
@@ -2335,6 +2602,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377620_60679_20240611052414.jpg",
         desc: "",
         price: 120.0,
+        taste: ["kolalı", "tatlı", "gazlı"],
       },
       {
         name: "Sprite",
@@ -2342,6 +2610,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377622_60679_20240611052451.jpg",
         desc: "",
         price: 120.0,
+        taste: ["narenciyeli", "tatlı", "gazlı"],
       },
       {
         name: "Fanta",
@@ -2349,6 +2618,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377623_60679_20240611052500.jpg",
         desc: "",
         price: 120.0,
+        taste: ["portakallı", "tatlı", "gazlı"],
       },
       {
         name: "FuseTea Şeftali",
@@ -2356,6 +2626,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377624_60679_20240611052509.jpg",
         desc: "",
         price: 120.0,
+        taste: ["şeftalili", "çay aromalı", "tatlı"],
       },
       {
         name: "FuseTea Limon",
@@ -2363,6 +2634,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377625_60679_20240611052518.jpg",
         desc: "",
         price: 120.0,
+        taste: ["limonlu", "çay aromalı", "tatlımsı"],
       },
       {
         name: "Red Bull",
@@ -2370,6 +2642,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377626_60679_20240611052648.jpg",
         desc: "",
         price: 155.0,
+        taste: ["tatlı", "narenciyeli", "gazlı"],
       },
       {
         name: "Red Bull Sugarfree",
@@ -2377,6 +2650,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377690_60679_20240611052659.jpg",
         desc: "",
         price: 155.0,
+        taste: ["tatlandırıcılı", "narenciyeli", "gazlı"],
       },
       {
         name: "Soda",
@@ -2384,6 +2658,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377388_60679_20240611052735.jpg",
         desc: "",
         price: 95.0,
+        taste: ["mineralli", "ferah", "gazlı"],
       },
       {
         name: "Soda Limon",
@@ -2391,6 +2666,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377665_60679_20240611052743.jpg",
         desc: "",
         price: 120.0,
+        taste: ["limonlu", "ferah", "gazlı"],
       },
       {
         name: "Churchill",
@@ -2398,6 +2674,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377662_60679_20240611052754.jpg",
         desc: "",
         price: 130.0,
+        taste: ["tuzlu", "narenciyeli", "acımsı", "gazlı"],
       },
       {
         name: "Iced Americano",
@@ -2405,6 +2682,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5401574_60679_20240614082227.jpg",
         desc: "",
         price: 230.0,
+        taste: ["kavrulmuş", "acımsı", "ferah"],
       },
       {
         name: "Iced Latte",
@@ -2412,6 +2690,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5415688_60679_20240614082518.jpg",
         desc: "",
         price: 240.0,
+        taste: ["sütlü", "kremamsı", "hafif", "soğuk"],
       },
       {
         name: "Cold Brew",
@@ -2419,6 +2698,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5401568_60679_20240614083114.jpg",
         desc: "",
         price: 250.0,
+        taste: ["yumuşak", "kavrulmuş", "soğuk"],
       },
       {
         name: "Alkolsüz Kokteyl",
@@ -2426,6 +2706,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377631_60679_20240614084608.jpg",
         desc: "",
         price: 265.0,
+        taste: ["meyvemsi", "ferah", "tatlımsı"],
       },
       {
         name: "Su",
@@ -2433,6 +2714,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377630_60679_20240611052852.jpg",
         desc: "",
         price: 45.0,
+        taste: ["nötr", "ferah"],
       },
     ],
   },
@@ -2445,6 +2727,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377632_60679_20240614081618.jpg",
         desc: "",
         price: 75.0,
+        taste: ["tuzlu", "fıstıksı", "kavrulmuş"],
       },
       {
         name: "Karışık Kuruyemiş",
@@ -2452,6 +2735,7 @@ let menuItems = [
           "https://cdn.adisyo.com/mahrezphotos/5377633_60679_20240614081604.jpg",
         desc: "",
         price: 140.0,
+        taste: ["tuzlu", "kavrulmuş", "fındıksı"],
       },
     ],
   },
