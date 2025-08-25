@@ -1,26 +1,17 @@
 import { useState, useEffect } from "react"
 
 import TasteBox from "../components/find/TasteBox"
-
+import CategoryBox from "../components/find/CategoryBox"
 import Navbar from "../components/Navbar"
 import BgImg from "../components/BgImg"
 
-const tastesArr = [
-  { name: "Tatlı", isSelected: false },
-  { name: "Ekşi", isSelected: false },
-  { name: "Tuzlu", isSelected: false },
-  { name: "Acı", isSelected: false },
-  { name: "Umami", isSelected: false },
-  { name: "İsli", isSelected: false },
-  { name: "Baharatlı", isSelected: false },
-  { name: "Meyvemsi", isSelected: false },
-  { name: "Topraksı", isSelected: false },
-]
+import menuItems from "../data/items"
+import tastesData from "../data/tastes"
 
 export default function Find() {
   const [searchTerm, setSearchTerm] = useState("")
-  const [tastes, setTastes] = useState(tastesArr)
-  const [showTastes, setShowTastes] = useState(tastes)
+  const [tastes, setTastes] = useState([])
+  const [showTastes, setShowTastes] = useState([])
   const [selectedTastes, setSelectedTastes] = useState([])
   const [clickCounter, setClickCounter] = useState(0)
   const [generalCategory, setGeneralCategory] = useState([
@@ -28,6 +19,24 @@ export default function Find() {
     { name: "Soft İçecekler", isSelected: false },
     { name: "Yiyecekler", isSelected: false },
   ])
+
+  const selectedCat = generalCategory.find(
+    (cat) => cat.isSelected === true
+  ).name
+
+  useEffect(() => {
+    const tasteArr = []
+    tastesData
+      .find((t) => t.generalCat === selectedCat)
+      .tastes.map((tasteName) => {
+        tasteArr.push({ name: tasteName, isSelected: false })
+      })
+    setTastes(tasteArr)
+  }, [])
+
+  useEffect(() => {
+    setShowTastes(tastes)
+  }, [tastes])
 
   const handleChange = (e) => {
     setSearchTerm(e.target.value)
@@ -67,11 +76,22 @@ export default function Find() {
     setGeneralCategory((prevState) =>
       prevState.map((cat) =>
         cat.name.toLowerCase() === name.toLowerCase()
-          ? { ...cat, isSelected: !cat.isSelected }
+          ? { ...cat, isSelected: true }
           : { ...cat, isSelected: false }
       )
     )
   }
+
+  useEffect(() => {
+    const tasteArr = []
+    tastesData
+      .find((t) => t.generalCat === selectedCat)
+      .tastes.map((tasteName) => {
+        tasteArr.push({ name: tasteName, isSelected: false })
+      })
+    setTastes(tasteArr)
+    setSelectedTastes([])
+  }, [selectedCat])
 
   return (
     <>
@@ -93,7 +113,7 @@ export default function Find() {
         <div className="mb-4 flex justify-between">
           {generalCategory.map((cat, index) => {
             return (
-              <TasteBox
+              <CategoryBox
                 name={cat.name}
                 isSelected={cat.isSelected}
                 key={index}
@@ -126,7 +146,7 @@ export default function Find() {
             })}
           </div>
         )}
-        <div className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-2">
+        <div className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-2 h-1/5 overflow-x-auto scroll-smooth no-scrollbar">
           {showTastes.map((taste, index) => {
             return (
               <TasteBox
