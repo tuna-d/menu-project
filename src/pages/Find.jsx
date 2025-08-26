@@ -4,6 +4,7 @@ import TasteBox from "../components/find/TasteBox"
 import CategoryBox from "../components/find/CategoryBox"
 import Navbar from "../components/Navbar"
 import BgImg from "../components/BgImg"
+import MenuItemCard from "../components/menu/MenuItemCard"
 
 import menuItems from "../data/items"
 import tastesData from "../data/tastes"
@@ -15,10 +16,40 @@ export default function Find() {
   const [selectedTastes, setSelectedTastes] = useState([])
   const [clickCounter, setClickCounter] = useState(0)
   const [generalCategory, setGeneralCategory] = useState([
-    { name: "İçkiler", isSelected: true },
-    { name: "Soft İçecekler", isSelected: false },
-    { name: "Yiyecekler", isSelected: false },
+    {
+      name: "İçkiler",
+      isSelected: true,
+      subCategory: [
+        "Şişe Bira",
+        "Fıçı Bira",
+        "Konyak",
+        "Likör",
+        "Mezcal",
+        "Bunch The Cocktails",
+        "Klasik Kokteyl",
+        "Kırmızı Şarap",
+        "Beyaz Şarap",
+        "Roze Şarap",
+        "Köpüklü Şarap",
+        "Shot",
+        "Viski",
+        "Cin",
+        "Votka",
+        "Rom",
+      ],
+    },
+    {
+      name: "Soft İçecekler",
+      isSelected: false,
+      subCategory: ["Sıcak İçecek", "Soğuk İçecek"],
+    },
+    {
+      name: "Yiyecekler",
+      isSelected: false,
+      subCategory: ["Yemek", "Tatlı", "Çerez"],
+    },
   ])
+  const [filteredItems, setFilteredItems] = useState([])
 
   const selectedCat = generalCategory.find(
     (cat) => cat.isSelected === true
@@ -93,6 +124,24 @@ export default function Find() {
     setSelectedTastes([])
   }, [selectedCat])
 
+  useEffect(() => {
+    const subCategory = generalCategory.find(
+      (gen) => gen.name === selectedCat
+    ).subCategory
+
+    const itemsInCat = subCategory.flatMap((sub) => {
+      const it = menuItems.find((mi) => mi.category === sub).items
+      return it
+    })
+
+    const selectedTasteNames = selectedTastes.map((taste) => taste.name)
+
+    const filterdItemsArr = itemsInCat.filter((it) => {
+      return it.taste.some((t) => selectedTasteNames.includes(t))
+    })
+    setFilteredItems(filterdItemsArr)
+  }, [selectedTastes])
+
   return (
     <>
       <Navbar path="/" page="find" />
@@ -102,7 +151,7 @@ export default function Find() {
           <h1 className="text-2xl mb-2 text-pretty text-center">
             Lezzet keşfetine hoş geldin.
           </h1>
-          <p className="font-light text-sm mb-4">
+          <p className="font-light text-sm mb-2">
             Keşfetmek istediğin tatları seç, sana özel lezzetler sunalım.
           </p>
           <p className="font-light text-sm text-center">
@@ -146,7 +195,7 @@ export default function Find() {
             })}
           </div>
         )}
-        <div className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-2 h-1/5 overflow-x-auto scroll-smooth no-scrollbar">
+        <div className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-2 h-1/5 overflow-x-auto scroll-smooth no-scrollbar mb-4">
           {showTastes.map((taste, index) => {
             return (
               <TasteBox
@@ -156,6 +205,22 @@ export default function Find() {
               />
             )
           })}
+        </div>
+        <div className="px-4 overflow-x-auto scroll-smooth h-68">
+          {filteredItems.length !== 0 &&
+            filteredItems.map((item) => {
+              return (
+                <MenuItemCard
+                  key={item.id}
+                  name={item.name}
+                  desc={item.desc}
+                  image={item.image}
+                  price={item.price}
+                  isGrid={false}
+                  tastes={item.taste}
+                />
+              )
+            })}
         </div>
       </main>
     </>

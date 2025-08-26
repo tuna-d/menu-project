@@ -1,7 +1,14 @@
 import { v4 as uuid } from "uuid"
 import { useState } from "react"
 
-export default function MenuItemCard({ image, name, price, desc, isGrid }) {
+export default function MenuItemCard({
+  image,
+  name,
+  price,
+  desc,
+  isGrid = false,
+  tastes = [],
+}) {
   const showPrice = (obj) => {
     const isObject = typeof obj === "object"
     if (isObject) {
@@ -125,6 +132,17 @@ export default function MenuItemCard({ image, name, price, desc, isGrid }) {
         >
           {showPrice(price)}
         </div>
+        {tastes.length !== 0 && (
+          <div className="font-noto text-sm font-light mt-2">
+            {tastes.map((taste, index) => {
+              return index + 1 === tastes.length ? (
+                <span key={index}>{taste}</span>
+              ) : (
+                <span key={index}>{taste}, </span>
+              )
+            })}
+          </div>
+        )}
       </div>
     </div>
   )
