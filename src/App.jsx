@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from "react-router"
 import Home from "./pages/Home"
 import Category from "./pages/Category"
 import Find from "./pages/Find"
+import SpinWheel from "./pages/SpinWheel"
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
   {
     path: "/findfor",
     element: <Find />,
+  },
+  {
+    path: "/spinthewheel",
+    element: <SpinWheel />,
   },
 ])
 

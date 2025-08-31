@@ -18,7 +18,10 @@ export default function Home() {
           >
             <span className="text-xl text-center">Lezzet Keşfeti</span>
           </Link>
-          <Link className="bg-neutral-100 items-center flex justify-center rounded-xl px-4 py-2 shadow-2xl active:scale-95 duration-150 ease-in">
+          <Link
+            to="/spinthewheel"
+            className="bg-neutral-100 items-center flex justify-center rounded-xl px-4 py-2 shadow-2xl active:scale-95 duration-150 ease-in"
+          >
             <span className="text-xl text-center">Spin the Wheel</span>
           </Link>
         </div>

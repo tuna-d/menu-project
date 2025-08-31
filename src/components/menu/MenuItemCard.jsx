@@ -8,6 +8,9 @@ export default function MenuItemCard({
   desc,
   isGrid = false,
   tastes = [],
+  needGrow = true,
+  handleSelect,
+  isSelected = false,
 }) {
   const showPrice = (obj) => {
     const isObject = typeof obj === "object"
@@ -38,15 +41,23 @@ export default function MenuItemCard({
   return (
     <div
       className={
-        isGrow
+        isSelected
+          ? isGrow
+            ? isGrid
+              ? "font-noto flex flex-col items-center bg-neutral-100 px-2.5 py-4 rounded-lg border-2 shadow-lg min-h-50 col-span-2 relative h-full border-[#B8421D]"
+              : "flex flex-col font-noto items-center bg-neutral-100 mb-2 rounded-lg border-2 shadow-lg px-4 py-2 min-h-32 relative h-full border-[#B8421D]"
+            : isGrid
+            ? "font-noto flex flex-col items-center bg-neutral-100 px-2.5 py-4 rounded-lg border-2 shadow-lg min-h-50 relative h-full border-[#B8421D]"
+            : "flex font-noto items-center bg-neutral-100 mb-2 rounded-lg border-2 shadow-lg px-4 py-2 min-h-32 relative h-full border-[#B8421D]"
+          : isGrow
           ? isGrid
-            ? "font-noto flex flex-col items-center bg-neutral-100 px-2.5 py-4 rounded-lg border-2 shadow-lg min-h-50 col-span-2 relative"
-            : "flex flex-col font-noto items-center bg-neutral-100 mb-2 rounded-lg border-2 shadow-lg px-4 py-2 min-h-32 relative"
+            ? "font-noto flex flex-col items-center bg-neutral-100 px-2.5 py-4 rounded-lg border-2 shadow-lg min-h-50 col-span-2 relative h-full"
+            : "flex flex-col font-noto items-center bg-neutral-100 mb-2 rounded-lg border-2 shadow-lg px-4 py-2 min-h-32 relative h-full"
           : isGrid
-          ? "font-noto flex flex-col items-center bg-neutral-100 px-2.5 py-4 rounded-lg border-2 shadow-lg min-h-50 relative"
-          : "flex font-noto items-center bg-neutral-100 mb-2 rounded-lg border-2 shadow-lg px-4 py-2 min-h-32 relative"
+          ? "font-noto flex flex-col items-center bg-neutral-100 px-2.5 py-4 rounded-lg border-2 shadow-lg min-h-50 relative h-full"
+          : "flex font-noto items-center bg-neutral-100 mb-2 rounded-lg border-2 shadow-lg px-4 py-2 min-h-32 relative h-full"
       }
-      onClick={expand}
+      onClick={needGrow ? expand : handleSelect}
     >
       {isGrow && (
         <button

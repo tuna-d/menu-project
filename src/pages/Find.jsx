@@ -5,6 +5,7 @@ import CategoryBox from "../components/find/CategoryBox"
 import Navbar from "../components/Navbar"
 import BgImg from "../components/BgImg"
 import MenuItemCard from "../components/menu/MenuItemCard"
+import SearchBar from "../components/find/SearchBar"
 
 import menuItems from "../data/items"
 import tastesData from "../data/tastes"
@@ -171,14 +172,9 @@ export default function Find() {
             )
           })}
         </div>
-
-        <input
-          type="text"
-          name="search"
-          id="search"
-          className="bg-[rgba(255,255,255,0.5)] px-3 py-1.5 shadow-2xl rounded-2xl w-full focus:outline-0 mb-4"
-          placeholder="Bugün canın ne çekiyor?"
+        <SearchBar
           value={searchTerm}
+          placeholder="Bugün canın ne çekiyor?"
           onChange={handleChange}
         />
         {selectedTastes.length !== 0 && (
