@@ -5,6 +5,8 @@ import BgImg from "../components/BgImg"
 import SearchBar from "../components/find/SearchBar"
 import MenuItemCard from "../components/menu/MenuItemCard"
 import MiniItemCard from "../components/spin/MiniItemCard"
+import Wheel from "../components/spin/Wheel"
+import LuckyItemCard from "../components/spin/LuckyItemCard"
 
 import menuItems from "../data/items"
 
@@ -14,15 +16,21 @@ const allItems = () => {
   findItems.map((fi) =>
     fi.map((item) => itemsArr.push({ ...item, isSelected: false }))
   )
+
+  for (let i = 0; i < 5; i++) {
+    const randNum = Math.floor(Math.random() * itemsArr.length)
+    itemsArr[randNum] = { ...itemsArr[randNum], isSelected: true }
+  }
+
   return itemsArr
 }
-
 export default function SpinWheel() {
   const [search, setSearch] = useState("")
   const [items, setItems] = useState(allItems())
   const [showItems, setShowItems] = useState(allItems())
   const [selectedItems, setSelectedItems] = useState([])
   const [scroll, setScroll] = useState({ scrollTop: 0, showGoTop: false })
+  const [luckyItem, setLuckyItem] = useState()
 
   const handleScroll = (e) => {
     const { scrollTop } = e.target
@@ -56,8 +64,10 @@ export default function SpinWheel() {
   }
 
   const handleClick = (id) => {
-    setSelectedItems((prevState) => {
-      return prevState.filter((item) => item.id !== id)
+    setShowItems((prevState) => {
+      return prevState.map((item) => {
+        return item.id === id ? { ...item, isSelected: false } : item
+      })
     })
   }
 
@@ -73,6 +83,29 @@ export default function SpinWheel() {
     setSelectedItems(selectedItems)
   }, [showItems])
 
+  const selectLuckyItem = (item) => {
+    setLuckyItem(item)
+  }
+
+  const removeLuckyItem = () => {
+    setLuckyItem("")
+  }
+
+  const findLuckyItem = (itemName) => {
+    if (itemName && itemName !== "") {
+      const foundItem = items.find((item) => item.name === itemName)
+      return (
+        <LuckyItemCard
+          name={foundItem.name}
+          desc={foundItem.desc}
+          price={foundItem.price}
+          image={foundItem.image}
+          removeLuckyItem={removeLuckyItem}
+        />
+      )
+    }
+  }
+
   return (
     <>
       <Navbar path="/" page="spin" />
@@ -81,7 +114,17 @@ export default function SpinWheel() {
         className="font-noto h-screen pt-24 px-4 overflow-y-auto scroll-smooth w-screen"
         onScroll={handleScroll}
       >
-        <h1>SpinWheel</h1>
+        {selectedItems.length >= 2 ? (
+          <Wheel
+            selectedItems={selectedItems}
+            selectLuckyItem={selectLuckyItem}
+          />
+        ) : (
+          <h1 className="text-center bg-[rgba(255,255,255,0.5)] px-3 py-1.5 shadow-2xl rounded-2xl w-full focus:outline-0 mb-4">
+            Lütfen en az 2 ürün seçiniz.
+          </h1>
+        )}
+        {findLuckyItem(luckyItem)}
         {selectedItems.length !== 0 && (
           <div className="mb-4 max-h-1/4 overflow-x-auto scroll-smooth">
             {selectedItems.map((item) => {
