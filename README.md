@@ -5,6 +5,8 @@ Users can browse categories, filter by tastes, and even spin a wheel to let chan
 
 This is a **personal self-development project** — it is **not an official or real menu** for Bunch The Garden. The goal of this project is to practice React, Vite, Tailwind, and data-driven UI development while building an interactive QR-style menu.
 
+👉 **Live Demo:** [bunchthegardenmenu-project.netlify.app](https://bunchthegardenmenu-project.netlify.app/)
+
 ## 🚀 Tech Stack
 
 - [React 19](https://react.dev) – component-based UI
