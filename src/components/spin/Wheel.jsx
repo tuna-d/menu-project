@@ -96,7 +96,7 @@ export default function Wheel({ selectedItems, selectLuckyItem }) {
         }
 
         if (wedgeShape && wedgeShape !== activeWedge) {
-          wedgeShape.fill("rgba(207, 87, 50, 0.7)")
+          wedgeShape.fill("rgba(214, 211, 209, 0.8)")
           activeWedge = wedgeShape
         }
       }

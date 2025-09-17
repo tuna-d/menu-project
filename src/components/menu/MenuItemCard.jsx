@@ -38,27 +38,26 @@ export default function MenuItemCard({
     setIsGrow(false)
   }
 
+  const baseClasses =
+    "font-noto bg-neutral-100 rounded-lg border-2 shadow-lg relative"
+
+  const gridClasses = "flex flex-col items-center px-2.5 py-4 min-h-50"
+  const listClasses = "flex items-center px-4 py-2 min-h-32 mb-2"
+
+  const growClasses = isGrid
+    ? "col-span-2"
+    : " flex-col items-center text-center py-4"
+  const selectedClasses = isSelected ? "border-[#B8421D]" : ""
+
+  const className = [
+    baseClasses,
+    isGrid ? gridClasses : listClasses,
+    isGrow ? growClasses : "",
+    selectedClasses,
+  ].join(" ")
+
   return (
-    <div
-      className={
-        isSelected
-          ? isGrow
-            ? isGrid
-              ? "font-noto flex flex-col items-center bg-neutral-100 px-2.5 py-4 rounded-lg border-2 shadow-lg min-h-50 col-span-2 relative h-full border-[#B8421D]"
-              : "flex flex-col font-noto items-center bg-neutral-100 mb-2 rounded-lg border-2 shadow-lg px-4 py-2 min-h-32 relative h-full border-[#B8421D]"
-            : isGrid
-            ? "font-noto flex flex-col items-center bg-neutral-100 px-2.5 py-4 rounded-lg border-2 shadow-lg min-h-50 relative h-full border-[#B8421D]"
-            : "flex font-noto items-center bg-neutral-100 mb-2 rounded-lg border-2 shadow-lg px-4 py-2 min-h-32 relative h-full border-[#B8421D]"
-          : isGrow
-          ? isGrid
-            ? "font-noto flex flex-col items-center bg-neutral-100 px-2.5 py-4 rounded-lg border-2 shadow-lg min-h-50 col-span-2 relative h-full"
-            : "flex flex-col font-noto items-center bg-neutral-100 mb-2 rounded-lg border-2 shadow-lg px-4 py-2 min-h-32 relative h-full"
-          : isGrid
-          ? "font-noto flex flex-col items-center bg-neutral-100 px-2.5 py-4 rounded-lg border-2 shadow-lg min-h-50 relative h-full"
-          : "flex font-noto items-center bg-neutral-100 mb-2 rounded-lg border-2 shadow-lg px-4 py-2 min-h-32 relative h-full"
-      }
-      onClick={needGrow ? expand : handleSelect}
-    >
+    <div className={className} onClick={needGrow ? expand : handleSelect}>
       {isGrow && (
         <button
           onClick={(e) => {
