@@ -64,7 +64,7 @@ export default function Category() {
       />
       <BgImg />
       <main
-        className="font-noto h-screen overflow-y-auto scroll-smooth w-screen pt-24 pb-4"
+        className="font-montserrat h-screen overflow-y-auto scroll-smooth w-screen pt-24 pb-4"
         onScroll={handleScroll}
       >
         <div className="flex overflow-x-scroll no-scrollbar scroll-smooth mb-6 snap-x">

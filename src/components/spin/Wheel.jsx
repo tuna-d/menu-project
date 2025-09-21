@@ -26,18 +26,18 @@ export default function Wheel({ selectedItems, selectLuckyItem }) {
           radius={radius}
           angle={wedgeAngle}
           fill="rgba(255, 255, 255, 0.7)"
-          stroke="#29493D"
+          stroke="black"
           strokeWidth={1}
           rotation={wedgeRotation}
         />
         <Text
           text={text}
-          fontSize={14}
-          fontFamily="Calibri"
+          fontSize={12}
+          fontFamily="Arial"
           fill="#29493D"
           align="center"
           verticalAlign="middle"
-          width={115}
+          width={110}
           x={textX}
           y={textY}
           offsetX={60}
@@ -75,7 +75,7 @@ export default function Wheel({ selectedItems, selectLuckyItem }) {
 
       if (selectedItems.length >= 2 && stageRef.current) {
         const shape = stageRef.current.getIntersection({
-          x: stageRef.current.width() / 2,
+          x: stageRef.current.width() / 2 - 20,
           y: stageRef.current.height() / 2 - 120,
         })
 
@@ -117,18 +117,14 @@ export default function Wheel({ selectedItems, selectLuckyItem }) {
     <>
       <Stage width={window.innerWidth} height={300} ref={stageRef}>
         <Layer>
-          <Group
-            x={window.innerWidth / 2 - 16}
-            y={window.innerHeight / 6}
-            ref={wheelRef}
-          >
+          <Group x={window.innerWidth / 2 - 16} y={150} ref={wheelRef}>
             {selectedItems.map((item, index) => {
               return addWedges(index, selectedItems.length, item.name)
             })}
           </Group>
           <Group
             x={window.innerWidth / 2 - 16}
-            y={window.innerHeight / 6}
+            y={150}
             onClick={handleClick}
             onTap={handleClick}
           >
@@ -138,21 +134,21 @@ export default function Wheel({ selectedItems, selectLuckyItem }) {
               angle={(2 * Math.PI) / 6}
               fill="#cf5732"
               stroke="#29493D"
-              strokeWidth={1}
+              strokeWidth={0}
               rotation={(2 * Math.PI) / 6}
             />
             <Circle
               radius={20}
               fill="#cf5732"
               stroke="#29493D"
-              strokeWidth={1}
+              strokeWidth={0}
             />
             <Text
               x={-40}
               y={-8}
               text="Spin"
               fontSize={14}
-              fontFamily="Calibri"
+              fontFamily="Arial"
               fill="rgb(255, 255, 255)"
               width={80}
               align="center"

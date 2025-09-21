@@ -12,19 +12,22 @@ export default function LuckyItemCard({
     if (isObject) {
       return Object.keys(obj).map((key) => {
         return (
-          <div key={uuid()} className="flex flex-col items-center">
+          <div
+            key={uuid()}
+            className="flex flex-col items-center font-montserrat"
+          >
             <span className="text-xs font-light">{key}</span>
             <span className="font-semibold text-sm">₺{obj[key]}</span>
           </div>
         )
       })
     } else {
-      return <span className="font-semibold">₺{obj}</span>
+      return <span className="font-semibold font-montserrat">₺{obj}</span>
     }
   }
 
   return (
-    <div className="font-noto flex flex-col items-center bg-neutral-100 px-2.5 py-4 rounded-lg border-2 shadow-lg relative mb-4">
+    <div className="font-montserrat flex flex-col items-center bg-neutral-100 px-2.5 py-4 rounded-lg border-2 shadow-lg relative mb-4">
       <button onClick={removeLuckyItem} className="absolute top-2 right-2">
         <img
           width="25"

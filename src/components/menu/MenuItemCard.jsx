@@ -17,14 +17,17 @@ export default function MenuItemCard({
     if (isObject) {
       return Object.keys(obj).map((key) => {
         return (
-          <div key={uuid()} className="flex flex-col items-center">
+          <div
+            key={uuid()}
+            className="flex flex-col items-center font-montserrat"
+          >
             <span className="text-xs font-light">{key}</span>
             <span className="font-semibold text-sm">₺{obj[key]}</span>
           </div>
         )
       })
     } else {
-      return <span className="font-semibold">₺{obj}</span>
+      return <span className="font-semibold font-montserrat">₺{obj}</span>
     }
   }
 
@@ -39,7 +42,7 @@ export default function MenuItemCard({
   }
 
   const baseClasses =
-    "font-noto bg-neutral-100 rounded-lg border-2 shadow-lg relative"
+    "font-montserrat bg-neutral-100 rounded-lg border-2 shadow-lg relative"
 
   const gridClasses = "flex flex-col items-center px-2.5 py-4 min-h-50"
   const listClasses = "flex items-center px-4 py-2 min-h-32 mb-2"
@@ -143,7 +146,7 @@ export default function MenuItemCard({
           {showPrice(price)}
         </div>
         {tastes.length !== 0 && (
-          <div className="font-noto text-sm font-light mt-2">
+          <div className="font-montserrat text-sm font-light mt-2">
             {tastes.map((taste, index) => {
               return index + 1 === tastes.length ? (
                 <span key={index}>{taste}</span>

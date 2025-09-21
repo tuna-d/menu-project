@@ -111,7 +111,7 @@ export default function SpinWheel() {
       <Navbar path="/" page="spin" />
       <BgImg />
       <main
-        className="font-noto h-screen pt-24 px-4 overflow-y-auto scroll-smooth w-screen"
+        className="font-montserrat h-screen pt-24 px-4 overflow-y-scroll scroll-smooth w-screen overflow-x-hidden"
         onScroll={handleScroll}
       >
         {selectedItems.length >= 2 ? (

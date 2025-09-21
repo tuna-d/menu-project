@@ -10,7 +10,7 @@ export default function Home() {
     <>
       <Navbar path="/" page="home" />
       <BgImg />
-      <main className="font-noto h-screen pt-24 px-4 overflow-y-auto scroll-smooth w-screen">
+      <main className="font-montserrat h-screen pt-24 px-4 overflow-y-auto scroll-smooth w-screen">
         <div className="grid grid-cols-2 mx-2 gap-2 mb-2 items-center">
           <Link
             to="/findfor"

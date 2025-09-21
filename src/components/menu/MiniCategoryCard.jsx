@@ -46,7 +46,7 @@ export default function MiniCategoryCard({ name, image, id }) {
             alt={`${name} image`}
             className="w-7 h-7 object-cover object-center rounded-full"
           />
-          <span className="whitespace-nowrap ps-2 font-noto">{name}</span>
+          <span className="whitespace-nowrap ps-2 font-montserrat">{name}</span>
         </Link>
       </div>
     </div>

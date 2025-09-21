@@ -1,6 +1,6 @@
 export default function MiniItemCard({ name, image, onClick }) {
   return (
-    <div className="flex font-noto items-center mb-2 bg-[rgba(255,255,255,0.7)] rounded-xl px-1.5 py-2">
+    <div className="flex font-montserrat items-center mb-2 bg-[rgba(255,255,255,0.7)] rounded-xl px-1.5 py-2">
       <div className="w-8 h-8 rounded-full overflow-hidden shadow-gray-400 shadow-lg">
         <img src={image} alt={`${name} image`} className="object-center"></img>
       </div>

@@ -9,7 +9,9 @@ export default function TasteBox({ name, handleClick, isSelected = false }) {
       onClick={handleClick}
       id={name}
     >
-      <span className="font-noto text-sm select-none font-light">{name}</span>
+      <span className="font-montserrat text-sm select-none font-light">
+        {name}
+      </span>
     </div>
   )
 }

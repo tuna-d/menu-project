@@ -147,7 +147,7 @@ export default function Find() {
     <>
       <Navbar path="/" page="find" />
       <BgImg />
-      <main className="font-noto h-screen pt-24 px-4 overflow-y-auto scroll-smooth w-screen">
+      <main className="font-montserrat h-screen pt-24 px-4 overflow-y-auto scroll-smooth w-screen">
         <div className="bg-[rgba(255,255,255,0.5)] px-3 py-1.5 shadow-2xl rounded-2xl mb-4">
           <h1 className="text-2xl mb-2 text-pretty text-center">
             Lezzet keşfetine hoş geldin.
@@ -191,7 +191,7 @@ export default function Find() {
             })}
           </div>
         )}
-        <div className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-2 h-1/5 overflow-x-auto scroll-smooth no-scrollbar mb-4">
+        <div className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-2 h-1/8 overflow-x-auto scroll-smooth no-scrollbar mb-4">
           {showTastes.map((taste, index) => {
             return (
               <TasteBox
